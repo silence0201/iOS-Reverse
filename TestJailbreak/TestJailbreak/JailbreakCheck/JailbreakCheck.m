@@ -119,19 +119,14 @@ BOOL checkCydiaScheme() {
     return NO;
 }
 
-BOOL checkReadWritePermissions()
-{
+BOOL checkReadWritePermissions() {
     NSError *error;
     NSString *stringToBeWritten = @"0";
     [stringToBeWritten writeToFile:LOO_CRYPT_STR_N("/private/jailbreak.test", 23)
                         atomically:YES
                           encoding:NSUTF8StringEncoding error:&error];
     
-    if (error == nil)
-    {
-        return YES;
-    }
-    
+    if (error == nil) return YES;
     return NO;
 }
 
