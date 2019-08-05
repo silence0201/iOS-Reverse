@@ -19,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if ([JailbreakCheck isDeviceJailbroken]) {
+        NSLog(@"设备已越狱");
         self.tipLabel.text = @"设备已越狱";
     } else {
+        NSLog(@"设备未越狱");
         self.tipLabel.text = @"设备未越狱";
     }
 }
