@@ -1,7 +1,5 @@
 #line 1 "Tweak.x"
 #import <UIKit/UIKit.h>
-@interface ViewController : UIViewController
-@end
 
 
 #include <substrate.h>
@@ -27,16 +25,17 @@
 @class ViewController; 
 static void (*_logos_orig$_ungrouped$ViewController$touchesBegan$withEvent$)(_LOGOS_SELF_TYPE_NORMAL ViewController* _LOGOS_SELF_CONST, SEL, NSSet<UITouch *> *, UIEvent *); static void _logos_method$_ungrouped$ViewController$touchesBegan$withEvent$(_LOGOS_SELF_TYPE_NORMAL ViewController* _LOGOS_SELF_CONST, SEL, NSSet<UITouch *> *, UIEvent *); 
 
-#line 5 "Tweak.x"
+#line 3 "Tweak.x"
 
 
 static void _logos_method$_ungrouped$ViewController$touchesBegan$withEvent$(_LOGOS_SELF_TYPE_NORMAL ViewController* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, NSSet<UITouch *> * touches, UIEvent * event) {
 	UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
+    id we = self;
+    [[we view] addSubview:view];
 }
 
 
 static __attribute__((constructor)) void _logosLocalInit() {
 {Class _logos_class$_ungrouped$ViewController = objc_getClass("ViewController"); MSHookMessageEx(_logos_class$_ungrouped$ViewController, @selector(touchesBegan:withEvent:), (IMP)&_logos_method$_ungrouped$ViewController$touchesBegan$withEvent$, (IMP*)&_logos_orig$_ungrouped$ViewController$touchesBegan$withEvent$);} }
-#line 14 "Tweak.x"
+#line 13 "Tweak.x"
