@@ -14,6 +14,10 @@
 
 @implementation ViewController
 
+void test() {
+    printf("Hello,World");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -26,6 +30,7 @@
     UISwitch *s = [UISwitch new];
     s.center = self.view.center;
     [self.view addSubview:s];
+    test();
 }
 
 
