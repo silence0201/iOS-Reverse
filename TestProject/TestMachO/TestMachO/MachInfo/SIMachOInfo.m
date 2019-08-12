@@ -112,7 +112,7 @@ void delete(NSString * filePath, long offset, long size){
     struct fat_header header;
     [handle _readData:&header length:sizeof(struct fat_header)];
     BOOL bigEndian = (header.magic == FAT_CIGAM || header.magic == FAT_CIGAM_64);
-    
+    BOOL is64bit = (header.magic == FAT_MAGIC_64 || header.magic == FAT_CIGAM_64);
     // 架构数量
     uint32_t archCount = SIEndianConvert(bigEndian, header.nfat_arch);
     NSMutableArray *machOs = [NSMutableArray arrayWithCapacity:archCount];
@@ -121,24 +121,23 @@ void delete(NSString * filePath, long offset, long size){
         SIFatArch *fatArch = [[SIFatArch alloc]init];
         fatArch.magic = _magic;
         // 读取一个架构的元数据
-        unsigned long long offset = 0;
-        if (_magic == FAT_MAGIC || _magic == FAT_CIGAM) {
-            struct fat_arch arch;
-            [handle _readData:&arch length:sizeof(struct fat_arch)];
-            fatArch.fatArch = arch;
-            offset = arch.offset;
-        } else {
+        if (is64bit) {
             struct fat_arch_64 arch64;
             [handle _readData:&arch64 length:sizeof(struct fat_arch_64)];
             fatArch.fatArch_64 = arch64;
-            offset = arch64.offset;
+            fatArch.offset = arch64.offset;
+        } else {
+            struct fat_arch arch;
+            [handle _readData:&arch length:sizeof(struct fat_arch)];
+            fatArch.fatArch = arch;
+            fatArch.offset = arch.offset;
         }
 
         // 保留偏移
         unsigned long long archMetaOffset = handle.offsetInFile;
         
         // 偏移到架构具体数据的开始
-        [handle seekToFileOffset:SIEndianConvert(bigEndian, offset)];
+        [handle seekToFileOffset:SIEndianConvert(bigEndian, fatArch.offset)];
         SIMachOInfo *machO = [[[self class] alloc] init];
         [machO handleMachO:handle];
         if (machO.isEncrypted) {
@@ -159,21 +158,36 @@ void delete(NSString * filePath, long offset, long size){
     // magic
     uint32_t magic = [handle _staticReadUint32];
     
-    // header
-    struct mach_header header;
-    int headerLength = sizeof(struct mach_header);
-    BOOL bigEndian = (magic == MH_CIGAM);
-    BOOL is64bit = NO;
-    if (magic == MH_MAGIC_64 || magic == MH_CIGAM_64) {
-        headerLength = sizeof(struct mach_header_64);
-        bigEndian = (magic == MH_CIGAM_64);
-        is64bit = YES;
-    }
+    BOOL bigEndian = (magic == MH_CIGAM || magic == MH_CIGAM_64);
+    BOOL is64bit = (magic == MH_CIGAM_64 || magic == MH_MAGIC_64);
+    
+    _header = [[SIMachHeader alloc] init];
+    _header.magic = magic;
+
+    uint32_t cputype;
+    uint32_t cpusubtype;
+    // lc的数量
+    uint32_t ncmds;
     
     // 读取头部数据
-    [handle _readData:&header length:headerLength];
-    uint32_t cputype = SIEndianConvert(bigEndian, header.cputype);
-    uint32_t cpusubtype = SIEndianConvert(bigEndian, header.cpusubtype);
+    if (is64bit) {
+        struct mach_header_64 header64;
+        _header.offset = sizeof(struct mach_header_64);
+        [handle _readData:&header64 length:_header.offset];
+        _header.machHeader64 = header64;
+        cputype = SIEndianConvert(bigEndian, header64.cputype);
+        cpusubtype = SIEndianConvert(bigEndian, header64.cpusubtype);
+        ncmds = SIEndianConvert(bigEndian, header64.ncmds);
+    }else {
+        struct mach_header header;
+        _header.offset = sizeof(struct mach_header);
+        [handle _readData:&header length:_header.offset];
+        _header.machHeader = header;
+        cputype = SIEndianConvert(bigEndian, header.cputype);
+        cpusubtype = SIEndianConvert(bigEndian, header.cpusubtype);
+        ncmds = SIEndianConvert(bigEndian, header.ncmds);
+    }
+
     if (cputype == CPU_TYPE_X86_64) {
         self.architecture = @"x86_64";
     } else if (cputype == CPU_TYPE_X86) {
@@ -195,9 +209,6 @@ void delete(NSString * filePath, long offset, long size){
             self.architecture = @"arm_v7s";
         }
     }
-    
-    // lc的数量
-    uint32_t ncmds = SIEndianConvert(bigEndian, header.ncmds);
     // 遍历lc
     for (int i = 0; i < ncmds; i++) {
         struct load_command lc;

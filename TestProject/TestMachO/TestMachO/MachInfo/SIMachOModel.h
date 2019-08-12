@@ -12,19 +12,17 @@
 #include <mach-o/fat.h>
 
 @interface SIFatArch : NSObject
-@property (nonatomic,assign) long offset;
-@property (nonatomic,assign) uint32_t magic;
+@property (nonatomic,assign) unsigned long long offset;
+@property (nonatomic,assign) unsigned int magic;
 @property (nonatomic,assign) struct fat_arch fatArch;
 @property (nonatomic,assign) struct fat_arch_64 fatArch_64;
 @end
 
 @interface SIMachHeader : NSObject
 @property (nonatomic,assign) long offset;
-@property (nonatomic,assign) uint32_t magic;
-@property (nonatomic,assign) struct mach_header * machHeader;
-@property (nonatomic,assign) struct mach_header_64 * machHeader64;
-@property (nonatomic,assign) struct fat_arch *fatArch;
-@property (nonatomic,assign) struct fat_arch_64 *fatArch_64;
+@property (nonatomic,assign) unsigned int magic;
+@property (nonatomic,assign) struct mach_header machHeader;
+@property (nonatomic,assign) struct mach_header_64 machHeader64;
 @end
 
 @interface SIDylibCommand : NSObject
