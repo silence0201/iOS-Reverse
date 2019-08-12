@@ -12,6 +12,27 @@
 
 #define SIEndianConvert(big, value) \
 ((big) ? OSSwapInt32((value)) : (value))
+
+void insert(NSString * filePath, NSData * toInsertData, long offset){
+    NSFileHandle * fh = [NSFileHandle fileHandleForUpdatingAtPath:filePath];
+    [fh seekToFileOffset:offset];
+    NSData * remainData = [fh readDataToEndOfFile];
+    [fh truncateFileAtOffset:offset];
+    [fh writeData:toInsertData];
+    [fh writeData:remainData];
+    [fh synchronizeFile];
+    [fh closeFile];
+}
+void delete(NSString * filePath, long offset, long size){
+    NSFileHandle * fh = [NSFileHandle fileHandleForUpdatingAtPath:filePath];
+    [fh seekToFileOffset:offset + size];
+    NSData * remainData = [fh readDataToEndOfFile];
+    [fh truncateFileAtOffset:offset];
+    [fh writeData:remainData];
+    [fh synchronizeFile];
+    [fh closeFile];
+}
+
 @interface NSFileHandle (Extension)
 
 - (uint32_t)_readUint32;
@@ -57,7 +78,11 @@
 @end
 
 
-@implementation SIMachOInfo
+@implementation SIMachOInfo {
+    NSFileHandle *_handle;
+    NSString *_path;
+    uint32_t _magic;
+}
 
 + (instancetype)machOWithPath:(NSString *)path {
     return [[self alloc]initWithPath:path];
@@ -65,18 +90,17 @@
 
 - (instancetype)initWithPath:(NSString *)path {
     if (self = [super init]) {
-        NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:path];
+        _handle = [NSFileHandle fileHandleForReadingAtPath:path];
+        _path = path;
         // 读取最前面的四个字节(magic number,魔数,用来标记文件类型)
-        uint32_t magic = [handle _staticReadUint32];
+        _magic = [_handle _staticReadUint32];
         
         // 大小端判断是否为FAT
-        if (magic == FAT_MAGIC || magic == FAT_CIGAM) {
-            [self handleFat:handle];
-        } else if (magic == MH_MAGIC || magic == MH_CIGAM || magic == MH_MAGIC_64 || magic == MH_CIGAM_64) {
-            [self handleMachO:handle];
+        if (_magic == FAT_MAGIC || _magic == FAT_CIGAM || _magic == FAT_MAGIC_64 || _magic == FAT_CIGAM_64) {
+            [self handleFat:_handle];
+        } else if (_magic == MH_MAGIC || _magic == MH_CIGAM || _magic == MH_MAGIC_64 || _magic == MH_CIGAM_64) {
+            [self handleMachO:_handle];
         }
-        
-        [handle closeFile];
     }
     return self;
 }
@@ -172,6 +196,10 @@
         
         [handle seekToFileOffset:handle.offsetInFile + lc.cmdsize];
     }
+}
+
+- (void)dealloc {
+    [_handle closeFile];
 }
 
 @end
