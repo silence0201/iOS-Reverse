@@ -226,23 +226,6 @@ void delete(NSString * filePath, long offset, long size){
             struct encryption_info_command eic;
             [handle _readData:&eic length:sizeof(struct encryption_info_command)];
             self.encrypted = (eic.cryptid != 0);
-            command.eic = eic;
-        }
-        
-        if (lc.cmd == LC_LOAD_DYLIB || lc.cmd == LC_LOAD_UPWARD_DYLIB) {
-            struct dylib_command dylib ;
-            [handle _readData:&dylib length:sizeof(struct dylib_command)];
-            command.dylibCmd = dylib;
-            
-            // 保留偏移
-            unsigned long long metaOffset = handle.offsetInFile;
-            int pathstringLen = dylib.cmdsize -  dylib.dylib.name.offset;
-            long offset = command.offset + dylib.dylib.name.offset;
-            [handle seekToFileOffset:offset];
-            NSData *data = [handle readDataOfLength:pathstringLen];
-            command.dylibPath = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@",command.dylibPath);
-            [handle seekToFileOffset:metaOffset];
         }
         
         [commandArr addObject:command];

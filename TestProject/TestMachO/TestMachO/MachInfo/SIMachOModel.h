@@ -33,8 +33,5 @@
 @interface SILoadCommand : NSObject
 @property (nonatomic,assign) long offset;
 @property (nonatomic,assign) struct load_command loadCmd;
-@property (nonatomic,assign) struct encryption_info_command eic;
-@property (nonatomic,assign) struct dylib_command dylibCmd;
-@property (nonatomic,strong) NSString *dylibPath;
 @end
 
