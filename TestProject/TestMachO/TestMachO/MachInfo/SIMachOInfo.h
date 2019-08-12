@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSArray *machOs;
 @property (strong, nonatomic) NSArray *fatArchs;
 @property (strong, nonatomic) SIMachHeader *header;
+@property (strong, nonatomic) NSArray *commands;
 
 + (instancetype)machOWithPath:(NSString *)path;
 - (instancetype)initWithPath:(NSString *)path;

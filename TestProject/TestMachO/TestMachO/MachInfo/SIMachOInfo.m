@@ -168,6 +168,7 @@ void delete(NSString * filePath, long offset, long size){
     uint32_t cpusubtype;
     // lc的数量
     uint32_t ncmds;
+    long load_commands_offset;
     
     // 读取头部数据
     if (is64bit) {
@@ -178,6 +179,7 @@ void delete(NSString * filePath, long offset, long size){
         cputype = SIEndianConvert(bigEndian, header64.cputype);
         cpusubtype = SIEndianConvert(bigEndian, header64.cpusubtype);
         ncmds = SIEndianConvert(bigEndian, header64.ncmds);
+        load_commands_offset = _header.offset;
     }else {
         struct mach_header header;
         _header.offset = sizeof(struct mach_header);
@@ -186,6 +188,7 @@ void delete(NSString * filePath, long offset, long size){
         cputype = SIEndianConvert(bigEndian, header.cputype);
         cpusubtype = SIEndianConvert(bigEndian, header.cpusubtype);
         ncmds = SIEndianConvert(bigEndian, header.ncmds);
+        load_commands_offset = _header.offset;
     }
 
     if (cputype == CPU_TYPE_X86_64) {
@@ -210,19 +213,43 @@ void delete(NSString * filePath, long offset, long size){
         }
     }
     // 遍历lc
+    NSMutableArray *commandArr = [NSMutableArray array];
     for (int i = 0; i < ncmds; i++) {
+        SILoadCommand *command = [[SILoadCommand alloc]init];
+        command.offset = load_commands_offset;
         struct load_command lc;
         [handle _staticReadData:&lc length:sizeof(struct load_command)];
+        command.loadCmd = lc;
+        load_commands_offset += lc.cmdsize;
         
         if (lc.cmd == LC_ENCRYPTION_INFO || lc.cmd == LC_ENCRYPTION_INFO_64) {
             struct encryption_info_command eic;
             [handle _readData:&eic length:sizeof(struct encryption_info_command)];
             self.encrypted = (eic.cryptid != 0);
-            break;
+            command.eic = eic;
         }
+        
+        if (lc.cmd == LC_LOAD_DYLIB || lc.cmd == LC_LOAD_UPWARD_DYLIB) {
+            struct dylib_command dylib ;
+            [handle _readData:&dylib length:sizeof(struct dylib_command)];
+            command.dylibCmd = dylib;
+            
+            // 保留偏移
+            unsigned long long metaOffset = handle.offsetInFile;
+            int pathstringLen = dylib.cmdsize -  dylib.dylib.name.offset;
+            long offset = command.offset + dylib.dylib.name.offset;
+            [handle seekToFileOffset:offset];
+            NSData *data = [handle readDataOfLength:pathstringLen];
+            command.dylibPath = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"%@",command.dylibPath);
+            [handle seekToFileOffset:metaOffset];
+        }
+        
+        [commandArr addObject:command];
         
         [handle seekToFileOffset:handle.offsetInFile + lc.cmdsize];
     }
+    self.commands = commandArr;
 }
 
 - (void)dealloc {
