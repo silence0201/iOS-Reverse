@@ -111,32 +111,48 @@ void delete(NSString * filePath, long offset, long size){
     // FAT头
     struct fat_header header;
     [handle _readData:&header length:sizeof(struct fat_header)];
-    BOOL bigEndian = (header.magic == FAT_CIGAM);
+    BOOL bigEndian = (header.magic == FAT_CIGAM || header.magic == FAT_CIGAM_64);
     
     // 架构数量
     uint32_t archCount = SIEndianConvert(bigEndian, header.nfat_arch);
     NSMutableArray *machOs = [NSMutableArray arrayWithCapacity:archCount];
+    NSMutableArray *fatArchs = [NSMutableArray arrayWithCapacity:archCount];
     for (int i = 0; i < archCount; i++) {
+        SIFatArch *fatArch = [[SIFatArch alloc]init];
+        fatArch.magic = _magic;
         // 读取一个架构的元数据
-        struct fat_arch arch;
-        [handle _readData:&arch length:sizeof(struct fat_arch)];
+        unsigned long long offset = 0;
+        if (_magic == FAT_MAGIC || _magic == FAT_CIGAM) {
+            struct fat_arch arch;
+            [handle _readData:&arch length:sizeof(struct fat_arch)];
+            fatArch.fatArch = arch;
+            offset = arch.offset;
+        } else {
+            struct fat_arch_64 arch64;
+            [handle _readData:&arch64 length:sizeof(struct fat_arch_64)];
+            fatArch.fatArch_64 = arch64;
+            offset = arch64.offset;
+        }
+
         // 保留偏移
         unsigned long long archMetaOffset = handle.offsetInFile;
         
         // 偏移到架构具体数据的开始
-        [handle seekToFileOffset:SIEndianConvert(bigEndian, arch.offset)];
+        [handle seekToFileOffset:SIEndianConvert(bigEndian, offset)];
         SIMachOInfo *machO = [[[self class] alloc] init];
         [machO handleMachO:handle];
         if (machO.isEncrypted) {
             self.encrypted = YES;
         }
         [machOs addObject:machO];
+        [fatArchs addObject:fatArch];
         
         // 跳过这个架构的元数据
         [handle seekToFileOffset:archMetaOffset];
     }
     
     self.machOs = machOs;
+    self.fatArchs = fatArchs;
 }
 
 - (void)handleMachO:(NSFileHandle *)handle {

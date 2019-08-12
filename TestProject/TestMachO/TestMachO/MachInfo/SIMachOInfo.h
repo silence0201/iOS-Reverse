@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 是否为胖进制文件 */
 @property (assign, nonatomic, getter=isFat) BOOL fat;
 @property (strong, nonatomic) NSArray *machOs;
+@property (strong, nonatomic) NSArray *fatArchs;
 @property (strong, nonatomic) SIMachHeader *header;
 
 + (instancetype)machOWithPath:(NSString *)path;

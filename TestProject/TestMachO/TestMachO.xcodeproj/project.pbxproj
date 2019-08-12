@@ -11,6 +11,7 @@
 		E8C169D222FFC72600368706 /* SIMachOInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C169D122FFC72600368706 /* SIMachOInfo.m */; };
 		E8C169D522FFD7C200368706 /* SpringBoard in Resources */ = {isa = PBXBuildFile; fileRef = E8C169D422FFD7C200368706 /* SpringBoard */; };
 		E8D50C7B2301AE9800B531B4 /* SIMachOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D50C7A2301AE9800B531B4 /* SIMachOModel.m */; };
+		E8D50C7D2301B79400B531B4 /* ElevenPlayer in Resources */ = {isa = PBXBuildFile; fileRef = E8D50C7C2301B79400B531B4 /* ElevenPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E8C169D422FFD7C200368706 /* SpringBoard */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = SpringBoard; path = SpringBoard/SpringBoard; sourceTree = "<group>"; };
 		E8D50C792301AE9800B531B4 /* SIMachOModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMachOModel.h; sourceTree = "<group>"; };
 		E8D50C7A2301AE9800B531B4 /* SIMachOModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMachOModel.m; sourceTree = "<group>"; };
+		E8D50C7C2301B79400B531B4 /* ElevenPlayer */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ElevenPlayer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E8C169D422FFD7C200368706 /* SpringBoard */,
+				E8D50C7C2301B79400B531B4 /* ElevenPlayer */,
 				E8C169CF22FFC71100368706 /* MachInfo */,
 				E8C169C522FFBD9200368706 /* Info.plist */,
 				E8C169C622FFBD9200368706 /* main.m */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D50C7D2301B79400B531B4 /* ElevenPlayer in Resources */,
 				E8C169D522FFD7C200368706 /* SpringBoard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,34 +8,15 @@
 
 #import "SIMachOModel.h"
 
+@implementation SIFatArch : NSObject
+@end
+
 @implementation SIMachHeader : NSObject
-- (instancetype)init {
-    if (self = [super init]) {
-        _offset = 0;
-        _machHeader = nil;
-        _machHeader64 = nil;
-    }
-    return self;
-}
 @end
 
 @implementation SILoadCommand : NSObject
-- (instancetype)init {
-    if (self = [super init]) {
-        _offset = 0;
-        _loadCmd = nil;
-    }
-    return self;
-}
 @end
 
 @implementation SIDylibCommand : NSObject
-- (instancetype)init {
-    if (self = [super init]) {
-        _offset = 0;
-        _dylibCmd = nil;
-    }
-    return self;
-}
 @end
 

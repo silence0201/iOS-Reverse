@@ -11,7 +11,7 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"SpringBoard" ofType:nil];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"ElevenPlayer" ofType:nil];
         SIMachOInfo *machInfo = [SIMachOInfo machOWithPath:path];
         NSLog(@"%@",machInfo);
         return 0;
