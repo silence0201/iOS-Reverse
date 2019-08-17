@@ -12,6 +12,15 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        int a = 20;
+        int b = 10;
+        if (a > b) {
+            printf("a>b");
+        }else {
+            NSLog(@"a<b");
+        }
+        
+        
         test();
         NSLog(@"%d",add(2, 4));
         NSLog(@"%d",sub(6, 2));
