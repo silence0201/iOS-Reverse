@@ -3,6 +3,7 @@
 .global _test
 .global _add
 .global _sub
+.global _load
 
 ; test函数实现
 _test:
@@ -50,4 +51,12 @@ ret
 ; sub函数的实现
 _sub:
 sub x0, x0, x1
+ret
+
+; load加载数据
+; ldr指令, 从内存中读取数据
+_load:
+ldr x0, [x1]
+; ldp指定,从内存读取数据,放到一对寄存器
+ldp,w0,w1,[x2, #0x10]
 ret

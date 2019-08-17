@@ -9,7 +9,9 @@
 #ifndef arm_h
 #define arm_h
 
-void test();
+void test(void);
+
+void load(void);
 
 int add(int a, int b);
 int sub(int a, int b);

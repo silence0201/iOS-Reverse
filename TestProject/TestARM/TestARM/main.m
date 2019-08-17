@@ -22,8 +22,11 @@ int main(int argc, char * argv[]) {
         
         
         test();
-        NSLog(@"%d",add(2, 4));
-        NSLog(@"%d",sub(6, 2));
+        
+        int c = 2;
+        load();
+        //NSLog(@"%d",add(2, 4));
+        //NSLog(@"%d",sub(6, 2));
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
