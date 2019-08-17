@@ -12,6 +12,7 @@
 void test(void);
 
 void load(void);
+void restore(void);
 
 int add(int a, int b);
 int sub(int a, int b);

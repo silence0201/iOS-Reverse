@@ -4,6 +4,7 @@
 .global _add
 .global _sub
 .global _load
+.global _restore
 
 ; test函数实现
 _test:
@@ -59,4 +60,11 @@ _load:
 ldr x0, [x1]
 ; ldp指定,从内存读取数据,放到一对寄存器
 ldp,w0,w1,[x2, #0x10]
+ret
+
+; store保存数据
+_restore:
+
+str w0, [x1]
+
 ret

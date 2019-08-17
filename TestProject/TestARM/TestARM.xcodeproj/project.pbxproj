@@ -14,6 +14,8 @@
 		E8C186352307C860007D2F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C186332307C860007D2F85 /* LaunchScreen.storyboard */; };
 		E8C186382307C860007D2F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C186372307C860007D2F85 /* main.m */; };
 		E8C1863F2307CE8B007D2F85 /* arm.s in Sources */ = {isa = PBXBuildFile; fileRef = E8C1863E2307CE8B007D2F85 /* arm.s */; };
+		E8C1864323082E54007D2F85 /* CTest.c in Sources */ = {isa = PBXBuildFile; fileRef = E8C1864223082E54007D2F85 /* CTest.c */; };
+		E8C1864523082F49007D2F85 /* CTest.s in Sources */ = {isa = PBXBuildFile; fileRef = E8C1864423082F49007D2F85 /* CTest.s */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		E8C186372307C860007D2F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8C1863E2307CE8B007D2F85 /* arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = arm.s; sourceTree = "<group>"; };
 		E8C186402307CED6007D2F85 /* arm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arm.h; sourceTree = "<group>"; };
+		E8C1864223082E54007D2F85 /* CTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CTest.c; sourceTree = "<group>"; };
+		E8C1864423082F49007D2F85 /* CTest.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = CTest.s; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +65,19 @@
 		E8C186272307C85F007D2F85 /* TestARM */ = {
 			isa = PBXGroup;
 			children = (
+				E8C1864223082E54007D2F85 /* CTest.c */,
 				E8C186282307C85F007D2F85 /* AppDelegate.h */,
-				E8C186292307C85F007D2F85 /* AppDelegate.m */,
+				E8C186402307CED6007D2F85 /* arm.h */,
 				E8C1862B2307C85F007D2F85 /* ViewController.h */,
+				E8C186292307C85F007D2F85 /* AppDelegate.m */,
+				E8C186372307C860007D2F85 /* main.m */,
 				E8C1862C2307C85F007D2F85 /* ViewController.m */,
-				E8C1862E2307C85F007D2F85 /* Main.storyboard */,
+				E8C186362307C860007D2F85 /* Info.plist */,
+				E8C1863E2307CE8B007D2F85 /* arm.s */,
+				E8C1864423082F49007D2F85 /* CTest.s */,
 				E8C186312307C860007D2F85 /* Assets.xcassets */,
 				E8C186332307C860007D2F85 /* LaunchScreen.storyboard */,
-				E8C186362307C860007D2F85 /* Info.plist */,
-				E8C186372307C860007D2F85 /* main.m */,
-				E8C1863E2307CE8B007D2F85 /* arm.s */,
-				E8C186402307CED6007D2F85 /* arm.h */,
+				E8C1862E2307C85F007D2F85 /* Main.storyboard */,
 			);
 			path = TestARM;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				E8C1862D2307C85F007D2F85 /* ViewController.m in Sources */,
 				E8C186382307C860007D2F85 /* main.m in Sources */,
 				E8C1863F2307CE8B007D2F85 /* arm.s in Sources */,
+				E8C1864523082F49007D2F85 /* CTest.s in Sources */,
+				E8C1864323082E54007D2F85 /* CTest.c in Sources */,
 				E8C1862A2307C85F007D2F85 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
