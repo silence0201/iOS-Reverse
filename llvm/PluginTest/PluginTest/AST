@@ -1,0 +1,32 @@
+[0;1;32mTranslationUnitDecl[0m[0;33m 0x7fbed10294e8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed1029a60[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __int128_t[0m [0;32m'__int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fbed1029780[0m [0;32m'__int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed1029ad0[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __uint128_t[0m [0;32m'unsigned __int128'[0m
+[0;34m| `-[0m[0;32mBuiltinType[0m[0;33m 0x7fbed10297a0[0m [0;32m'unsigned __int128'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed1029b70[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m SEL[0m [0;32m'SEL *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x7fbed1029b30[0m [0;32m'SEL *'[0m imported
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fbed10299c0[0m [0;32m'SEL'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed1029c58[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m id[0m [0;32m'id'[0m
+[0;34m| `-[0m[0;32mObjCObjectPointerType[0m[0;33m 0x7fbed1029c00[0m [0;32m'id'[0m imported
+[0;34m|   `-[0m[0;32mObjCObjectType[0m[0;33m 0x7fbed1029bd0[0m [0;32m'id'[0m imported
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed1029d38[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m Class[0m [0;32m'Class'[0m
+[0;34m| `-[0m[0;32mObjCObjectPointerType[0m[0;33m 0x7fbed1029ce0[0m [0;32m'Class'[0m imported
+[0;34m|   `-[0m[0;32mObjCObjectType[0m[0;33m 0x7fbed1029cb0[0m [0;32m'Class'[0m imported
+[0;34m|-[0m[0;1;32mObjCInterfaceDecl[0m[0;33m 0x7fbed1029d90[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m Protocol[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed102a0f8[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __NSConstantString[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m| `-[0m[0;32mRecordType[0m[0;33m 0x7fbed1029f00[0m [0;32m'struct __NSConstantString_tag'[0m
+[0;34m|   `-[0m[0;1;32mRecord[0m[0;33m 0x7fbed1029e60[0m[0;1;36m '__NSConstantString_tag'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed102a190[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_ms_va_list[0m [0;32m'char *'[0m
+[0;34m| `-[0m[0;32mPointerType[0m[0;33m 0x7fbed102a150[0m [0;32m'char *'[0m
+[0;34m|   `-[0m[0;32mBuiltinType[0m[0;33m 0x7fbed1029580[0m [0;32m'char'[0m
+[0;34m|-[0m[0;1;32mTypedefDecl[0m[0;33m 0x7fbed1062088[0m <[0;33m<invalid sloc>[0m> [0;33m<invalid sloc>[0m implicit[0;1;36m __builtin_va_list[0m [0;32m'struct __va_list_tag [1]'[0m
+[0;34m| `-[0m[0;32mConstantArrayType[0m[0;33m 0x7fbed1062030[0m [0;32m'struct __va_list_tag [1]'[0m 1 
+[0;34m|   `-[0m[0;32mRecordType[0m[0;33m 0x7fbed1061ea0[0m [0;32m'struct __va_list_tag'[0m
+[0;34m|     `-[0m[0;1;32mRecord[0m[0;33m 0x7fbed1061e00[0m[0;1;36m '__va_list_tag'[0m
+[0;34m|-[0m[0;1;32mImportDecl[0m[0;33m 0x7fbed301b000[0m <[0;33m./TestObj.h:9:1[0m> [0;33mcol:1[0m implicit Foundation
+[0;34m|-[0m[0;1;32mObjCInterfaceDecl[0m[0;33m 0x7fbed3033140[0m <[0;33mline:13:1[0m, [0;33mline:15:2[0m> [0;33mline:13:12[0m[0;1;36m test_obj[0m
+[0;34m| |-[0msuper [0;1;32mObjCInterface[0m[0;33m 0x7fbed301b0f0[0m[0;1;36m 'NSObject'[0m
+[0;34m| `-[0m[0;1;32mObjCImplementation[0m[0;33m 0x7fbed3033270[0m[0;1;36m 'test_obj'[0m
+[0;34m|-[0m[0;1;32mObjCImplementationDecl[0m[0;33m 0x7fbed3033270[0m <[0;33mTestObj.m:11:1[0m, [0;33mline:13:1[0m> [0;33mline:11:17[0m[0;1;36m test_obj[0m
+[0;34m| `-[0m[0;1;32mObjCInterface[0m[0;33m 0x7fbed3033140[0m[0;1;36m 'test_obj'[0m
+[0;34m`-[0m[0;1;32m<undeserialized declarations>[0m
