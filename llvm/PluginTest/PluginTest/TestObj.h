@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface test_obj : NSObject
 
+@property (strong, nonatomic) NSString *Test;
+
 @end
 
 NS_ASSUME_NONNULL_END

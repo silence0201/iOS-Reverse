@@ -295,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CXX = "/Users/silence/Desktop/Share/llvm_release/bin/clang++";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = PluginTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -324,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMPILER_INDEX_STORE_ENABLE = NO;
 				CXX = "/Users/silence/Desktop/Share/llvm_release/bin/clang++";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = PluginTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
