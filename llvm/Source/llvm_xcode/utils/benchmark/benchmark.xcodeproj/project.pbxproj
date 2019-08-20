@@ -1,0 +1,1321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1C4109C74F1146CF82C10A36 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 08D4475E17084F19AC58316F /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				6DD7A9095214443DA841FC65 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				267841D245A6492C8AA421C8 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		8272D582C6AA49869840AD74 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C315B1E39B7A4800860DE6CA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F3BABE9990C8479B9AF16E43 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AABD1A1608A9450E8A3CD68D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E013A0288C034D1D8DA6AEE9 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				0C0D086404104AACBC21B00D /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				44279B3D43DF4F359A697CFF /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EA7E46BC38BE47A1AA60CA49 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A7412B6EC8E6459182B196A1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				12AFF6679B53451C89EF721E /* CMake Rules */,
+			);
+			dependencies = (
+				E7AF533788B941F882B9A7F9 /* PBXTargetDependency */,
+				B416B63E003C4782A1D3AA18 /* PBXTargetDependency */,
+				52B9DE689AAD4964A991CBCF /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		053C9FF425384D88BBC30B9B /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.h */ = {isa = PBXBuildFile; fileRef = 8C8B55DECAFA4BF18C645380 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.h */; };
+		140331F750144B39A6ACCDA7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/mutex.h */ = {isa = PBXBuildFile; fileRef = 1457DEA4C69243F5873DDE4F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/mutex.h */; };
+		15F511C572634E348D741A3B /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sysinfo.cc */ = {isa = PBXBuildFile; fileRef = CE7E2CBF91464423B5E27783 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sysinfo.cc */; };
+		176D5804BD534A70AD6CFC49 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 286C3F15C5344F54B2ADEE0E /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */; };
+		27512C15A2CB47C39F3D6E13 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.h */ = {isa = PBXBuildFile; fileRef = 671CD205ECCD46E18FFC7530 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.h */; };
+		2F6051ABF8EE49B2A5DA1B5C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.h */ = {isa = PBXBuildFile; fileRef = A7C9C5517B6D42BFA8807D68 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.h */; };
+		3114BB1B7D3748229F52F7D4 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.cc */ = {isa = PBXBuildFile; fileRef = EC1E8E08E92B489F947A5351 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.cc */; };
+		34975527C45C407FB38FAE89 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_timer.h */ = {isa = PBXBuildFile; fileRef = B4C1275D479746D783CC2C1D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_timer.h */; };
+		3F8ED6F88B3F4200BD105D9C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_main.cc */ = {isa = PBXBuildFile; fileRef = A25C59C59041463EBCFDEC18 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_main.cc */; };
+		40B9B8FFB193457492BFFF54 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.cc */ = {isa = PBXBuildFile; fileRef = 4AAD63109AF04F8498827905 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.cc */; };
+		498500C0ECF944A6B3856F00 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.h */ = {isa = PBXBuildFile; fileRef = CA6E225CB7E547D299F2868F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.h */; };
+		4A55FBAF1EAD4AC4B98442A2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/arraysize.h */ = {isa = PBXBuildFile; fileRef = 9AABB0A8FFE54484B3CE8617 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/arraysize.h */; };
+		53AA81134CA74F929859F060 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.cc */ = {isa = PBXBuildFile; fileRef = 0B88D260DDC240F6AD7B0A75 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.cc */; };
+		58E2881430104ADAA80D7870 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.cc */ = {isa = PBXBuildFile; fileRef = 04FA43CE1B0D414EAF5EF3FF /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.cc */; };
+		5D51DADD6DA243CF9347F9B7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_api_internal.h */ = {isa = PBXBuildFile; fileRef = 0A7986DC361A4FE88963EDBE /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_api_internal.h */; };
+		62D2F46975D54B1BB1996BA1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 22C8C7D70A0449DFBFAA1AF9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */; };
+		62EBEA25F9E54FF9A890880A /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.h */ = {isa = PBXBuildFile; fileRef = 7FE123C34F7442BA9C9F3163 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.h */; };
+		658EB230D3944EB681449ABA /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/cycleclock.h */ = {isa = PBXBuildFile; fileRef = D9036C68D8294D4B921DF2F8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/cycleclock.h */; };
+		6A514C5E738A41A2956C354C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/json_reporter.cc */ = {isa = PBXBuildFile; fileRef = 977663F551854621B1565CBF /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/json_reporter.cc */; };
+		6F18B2BFA99045CB83B24968 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/re.h */ = {isa = PBXBuildFile; fileRef = DB981BE46E074DCEA9A63736 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/re.h */; };
+		71F359503CF04762B6BD0693 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.h */ = {isa = PBXBuildFile; fileRef = 77059854846545C08C416181 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.h */; };
+		7457648D4FF74E019C56D106 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/reporter.cc */ = {isa = PBXBuildFile; fileRef = D5D7DFBEA4A94E3CA7258748 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/reporter.cc */; };
+		7ABB26646AD644B784C7214A /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.cc */ = {isa = PBXBuildFile; fileRef = 7E268B8588CE4E20A1BE0709 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.cc */; };
+		88A99C7FEC3F4F338726C9A2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.h */ = {isa = PBXBuildFile; fileRef = E23011B166084208A54EF6EC /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.h */; };
+		994847DB4FAF4AD98C1586D5 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark.cc */ = {isa = PBXBuildFile; fileRef = 1777A5C63F0D4B19B3DFDAEB /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark.cc */; };
+		9CFC2CAAF9F14D57B441B567 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.cc */ = {isa = PBXBuildFile; fileRef = 47711FBA700A4725BE958F27 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.cc */; };
+		A2F76F5D6CE94A2B8A3595DC /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/internal_macros.h */ = {isa = PBXBuildFile; fileRef = 36C33AF006FB4E1D94550A1B /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/internal_macros.h */; };
+		B6720CCB01124E249F0AC290 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.cc */ = {isa = PBXBuildFile; fileRef = EBD12C703F7549DC9B26E539 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.cc */; };
+		B71614B470C949FC869CFEB5 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.h */ = {isa = PBXBuildFile; fileRef = D59EB6120BAE449FAEA34623 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.h */; };
+		C64CFFFAA7854A66BFE52F77 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.cc */ = {isa = PBXBuildFile; fileRef = FEB541DCE26F4CD69653E2F9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.cc */; };
+		CC98ED48CCAA4D5391DB8B5D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include/benchmark/benchmark.h */ = {isa = PBXBuildFile; fileRef = 5D3EE3E9DE264746B6A89BF5 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include/benchmark/benchmark.h */; };
+		DF4FF383D4AC42919F1EC98D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/log.h */ = {isa = PBXBuildFile; fileRef = ADB20241AC4B44D8A9176A13 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/log.h */; };
+		E00FF420A08F4835BFE3F8C1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_manager.h */ = {isa = PBXBuildFile; fileRef = 4329525F87684C0BAF0E94C7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_manager.h */; };
+		E438FF17ACB04EBDB120D185 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/check.h */ = {isa = PBXBuildFile; fileRef = 891DAB1F09B5443D8139F01F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/check.h */; };
+		F0916190DD054D5F90186E5F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/csv_reporter.cc */ = {isa = PBXBuildFile; fileRef = BB7D7353596F4B97A0739E1D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/csv_reporter.cc */; };
+		F9762288E4CA49088FB6F58C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/console_reporter.cc */ = {isa = PBXBuildFile; fileRef = B413D14850654705BAA57DE3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/console_reporter.cc */; };
+		FB138DF331B14202A97650F8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.cc */ = {isa = PBXBuildFile; fileRef = 6C5992F3D2DC4C3E85090F30 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.cc */; };
+		FF8D6BA2913A44CFA5543FD0 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.h */ = {isa = PBXBuildFile; fileRef = E5CBE7166DDA43DD9EBC2F0F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1AEE27ECBE2B4DA3A965D6C2 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		421C9528055F43A49F7C1EDD /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		AE73E09AD99D403D92DBCD14 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		B1F23E21C2BA4CD181241EF3 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		26F2ED63B1E84FD2959A4379 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7E46BC38BE47A1AA60CA49;
+			remoteInfo = ALL_BUILD;
+		};
+		331E8D94E8D848AC9692D7AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9E7B8AEFEC94D6DBE11DECB;
+			remoteInfo = benchmark_main;
+		};
+		594E1ADA96F3458BB208E632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7E46BC38BE47A1AA60CA49;
+			remoteInfo = ALL_BUILD;
+		};
+		6AFCCD8D08C741C59762A923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8272D582C6AA49869840AD74;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B3152E59F7C46BE9BF1A411 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 570D803ABBF8481199CD27F5;
+			remoteInfo = benchmark;
+		};
+		AB3DE18A6B454BB18284456C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8272D582C6AA49869840AD74;
+			remoteInfo = ZERO_CHECK;
+		};
+		B1E72B8A9F0140FC9AE09CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8272D582C6AA49869840AD74;
+			remoteInfo = ZERO_CHECK;
+		};
+		C286B4805D934C209981F97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ADB2690FA0449788C453657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 570D803ABBF8481199CD27F5;
+			remoteInfo = benchmark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FA43CE1B0D414EAF5EF3FF /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = string_util.cc; path = src/string_util.cc; sourceTree = SOURCE_ROOT; };
+		076D101769EB4B4289193D18 /* benchmark */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbenchmark.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7986DC361A4FE88963EDBE /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_api_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = benchmark_api_internal.h; path = src/benchmark_api_internal.h; sourceTree = SOURCE_ROOT; };
+		0B88D260DDC240F6AD7B0A75 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = statistics.cc; path = src/statistics.cc; sourceTree = SOURCE_ROOT; };
+		1457DEA4C69243F5873DDE4F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/mutex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutex.h; path = src/mutex.h; sourceTree = SOURCE_ROOT; };
+		1777A5C63F0D4B19B3DFDAEB /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = benchmark.cc; path = src/benchmark.cc; sourceTree = SOURCE_ROOT; };
+		22C8C7D70A0449DFBFAA1AF9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		283B1F773663464E920D4043 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		286C3F15C5344F54B2ADEE0E /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		36C33AF006FB4E1D94550A1B /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/internal_macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal_macros.h; path = src/internal_macros.h; sourceTree = SOURCE_ROOT; };
+		4329525F87684C0BAF0E94C7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = thread_manager.h; path = src/thread_manager.h; sourceTree = SOURCE_ROOT; };
+		47711FBA700A4725BE958F27 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = colorprint.cc; path = src/colorprint.cc; sourceTree = SOURCE_ROOT; };
+		4AAD63109AF04F8498827905 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timers.cc; path = src/timers.cc; sourceTree = SOURCE_ROOT; };
+		5D3EE3E9DE264746B6A89BF5 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include/benchmark/benchmark.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = benchmark.h; path = include/benchmark/benchmark.h; sourceTree = SOURCE_ROOT; };
+		671CD205ECCD46E18FFC7530 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = commandlineflags.h; path = src/commandlineflags.h; sourceTree = SOURCE_ROOT; };
+		6C5992F3D2DC4C3E85090F30 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = commandlineflags.cc; path = src/commandlineflags.cc; sourceTree = SOURCE_ROOT; };
+		77059854846545C08C416181 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = benchmark_register.h; path = src/benchmark_register.h; sourceTree = SOURCE_ROOT; };
+		7E268B8588CE4E20A1BE0709 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = counter.cc; path = src/counter.cc; sourceTree = SOURCE_ROOT; };
+		7FE123C34F7442BA9C9F3163 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = statistics.h; path = src/statistics.h; sourceTree = SOURCE_ROOT; };
+		891DAB1F09B5443D8139F01F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/check.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = check.h; path = src/check.h; sourceTree = SOURCE_ROOT; };
+		8C8B55DECAFA4BF18C645380 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = string_util.h; path = src/string_util.h; sourceTree = SOURCE_ROOT; };
+		977663F551854621B1565CBF /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/json_reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_reporter.cc; path = src/json_reporter.cc; sourceTree = SOURCE_ROOT; };
+		9AABB0A8FFE54484B3CE8617 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/arraysize.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arraysize.h; path = src/arraysize.h; sourceTree = SOURCE_ROOT; };
+		9CD32B3509A64D64A0A3FFD4 /* benchmark_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbenchmark_main.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25C59C59041463EBCFDEC18 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = benchmark_main.cc; path = src/benchmark_main.cc; sourceTree = SOURCE_ROOT; };
+		A7C9C5517B6D42BFA8807D68 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sleep.h; path = src/sleep.h; sourceTree = SOURCE_ROOT; };
+		ADB20241AC4B44D8A9176A13 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/log.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = log.h; path = src/log.h; sourceTree = SOURCE_ROOT; };
+		B413D14850654705BAA57DE3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/console_reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_reporter.cc; path = src/console_reporter.cc; sourceTree = SOURCE_ROOT; };
+		B4C1275D479746D783CC2C1D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = thread_timer.h; path = src/thread_timer.h; sourceTree = SOURCE_ROOT; };
+		BB7D7353596F4B97A0739E1D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/csv_reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = csv_reporter.cc; path = src/csv_reporter.cc; sourceTree = SOURCE_ROOT; };
+		CA6E225CB7E547D299F2868F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = complexity.h; path = src/complexity.h; sourceTree = SOURCE_ROOT; };
+		CE7E2CBF91464423B5E27783 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sysinfo.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sysinfo.cc; path = src/sysinfo.cc; sourceTree = SOURCE_ROOT; };
+		D59EB6120BAE449FAEA34623 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = counter.h; path = src/counter.h; sourceTree = SOURCE_ROOT; };
+		D5D7DFBEA4A94E3CA7258748 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reporter.cc; path = src/reporter.cc; sourceTree = SOURCE_ROOT; };
+		D9036C68D8294D4B921DF2F8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/cycleclock.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cycleclock.h; path = src/cycleclock.h; sourceTree = SOURCE_ROOT; };
+		DB981BE46E074DCEA9A63736 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/re.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = re.h; path = src/re.h; sourceTree = SOURCE_ROOT; };
+		E23011B166084208A54EF6EC /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = colorprint.h; path = src/colorprint.h; sourceTree = SOURCE_ROOT; };
+		E5CBE7166DDA43DD9EBC2F0F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timers.h; path = src/timers.h; sourceTree = SOURCE_ROOT; };
+		EBD12C703F7549DC9B26E539 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = benchmark_register.cc; path = src/benchmark_register.cc; sourceTree = SOURCE_ROOT; };
+		EC1E8E08E92B489F947A5351 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complexity.cc; path = src/complexity.cc; sourceTree = SOURCE_ROOT; };
+		FEB541DCE26F4CD69653E2F9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sleep.cc; path = src/sleep.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		265D5B76B7454098BA09AA4B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2B4BA387A45B47438E81C16A /* benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				57978D3B27EF401EA803DCDB /* Header Files */,
+				3A1BBED9B39747629A1817EE /* Source Files */,
+				22C8C7D70A0449DFBFAA1AF9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */,
+			);
+			name = benchmark;
+			sourceTree = "<group>";
+		};
+		3A1BBED9B39747629A1817EE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1777A5C63F0D4B19B3DFDAEB /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark.cc */,
+				EBD12C703F7549DC9B26E539 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.cc */,
+				47711FBA700A4725BE958F27 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.cc */,
+				6C5992F3D2DC4C3E85090F30 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.cc */,
+				EC1E8E08E92B489F947A5351 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.cc */,
+				B413D14850654705BAA57DE3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/console_reporter.cc */,
+				7E268B8588CE4E20A1BE0709 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.cc */,
+				BB7D7353596F4B97A0739E1D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/csv_reporter.cc */,
+				977663F551854621B1565CBF /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/json_reporter.cc */,
+				D5D7DFBEA4A94E3CA7258748 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/reporter.cc */,
+				FEB541DCE26F4CD69653E2F9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.cc */,
+				0B88D260DDC240F6AD7B0A75 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.cc */,
+				04FA43CE1B0D414EAF5EF3FF /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.cc */,
+				CE7E2CBF91464423B5E27783 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sysinfo.cc */,
+				4AAD63109AF04F8498827905 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		4FDC6A17346A43CDADCDBC93 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A25C59C59041463EBCFDEC18 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		57978D3B27EF401EA803DCDB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D3EE3E9DE264746B6A89BF5 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include/benchmark/benchmark.h */,
+				9AABB0A8FFE54484B3CE8617 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/arraysize.h */,
+				0A7986DC361A4FE88963EDBE /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_api_internal.h */,
+				77059854846545C08C416181 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.h */,
+				891DAB1F09B5443D8139F01F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/check.h */,
+				E23011B166084208A54EF6EC /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.h */,
+				671CD205ECCD46E18FFC7530 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.h */,
+				CA6E225CB7E547D299F2868F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.h */,
+				D59EB6120BAE449FAEA34623 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.h */,
+				D9036C68D8294D4B921DF2F8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/cycleclock.h */,
+				36C33AF006FB4E1D94550A1B /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/internal_macros.h */,
+				ADB20241AC4B44D8A9176A13 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/log.h */,
+				1457DEA4C69243F5873DDE4F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/mutex.h */,
+				DB981BE46E074DCEA9A63736 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/re.h */,
+				A7C9C5517B6D42BFA8807D68 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.h */,
+				7FE123C34F7442BA9C9F3163 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.h */,
+				8C8B55DECAFA4BF18C645380 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.h */,
+				4329525F87684C0BAF0E94C7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_manager.h */,
+				B4C1275D479746D783CC2C1D /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/thread_timer.h */,
+				E5CBE7166DDA43DD9EBC2F0F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5F5FC98DF0D0484DAC90D09C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AEB92774CBC24CE4A67414B3 /* benchmark_main */,
+				2B4BA387A45B47438E81C16A /* benchmark */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		7D20E7DF241F4098B246D57E = {
+			isa = PBXGroup;
+			children = (
+				93AFAF4131C44EA383A677F7 /* ALL_BUILD */,
+				5F5FC98DF0D0484DAC90D09C /* Utils */,
+				E6E0C26B80814A2AA1DE8B03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93AFAF4131C44EA383A677F7 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				265D5B76B7454098BA09AA4B /* CMake Rules */,
+				283B1F773663464E920D4043 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		AEB92774CBC24CE4A67414B3 /* benchmark_main */ = {
+			isa = PBXGroup;
+			children = (
+				4FDC6A17346A43CDADCDBC93 /* Source Files */,
+				286C3F15C5344F54B2ADEE0E /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/CMakeLists.txt */,
+			);
+			name = benchmark_main;
+			sourceTree = "<group>";
+		};
+		E6E0C26B80814A2AA1DE8B03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				076D101769EB4B4289193D18 /* benchmark */,
+				9CD32B3509A64D64A0A3FFD4 /* benchmark_main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		570D803ABBF8481199CD27F5 /* benchmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ACA9455143B4F7C85DD0DE0 /* Build configuration list for PBXNativeTarget "benchmark" */;
+			buildPhases = (
+				8BB232431CCA4823815CAD6B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395803824F9541C98E39E2BE /* PBXTargetDependency */,
+			);
+			name = benchmark;
+			productName = benchmark;
+			productReference = 076D101769EB4B4289193D18 /* benchmark */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B9E7B8AEFEC94D6DBE11DECB /* benchmark_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 786340842D894D7780294124 /* Build configuration list for PBXNativeTarget "benchmark_main" */;
+			buildPhases = (
+				A7057029944D45838A2B3812 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F252FF962DAC46FCB238905A /* PBXTargetDependency */,
+				69FAD8317CEE4987BFCF436D /* PBXTargetDependency */,
+			);
+			name = benchmark_main;
+			productName = benchmark_main;
+			productReference = 9CD32B3509A64D64A0A3FFD4 /* benchmark_main */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ADB2690FA0449788C453657 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = CDB1665B337D485AB7CDE8DB /* Build configuration list for PBXProject "benchmark" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				AE73E09AD99D403D92DBCD14 /* Debug */,
+				421C9528055F43A49F7C1EDD /* Release */,
+				B1F23E21C2BA4CD181241EF3 /* MinSizeRel */,
+				1AEE27ECBE2B4DA3A965D6C2 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 7D20E7DF241F4098B246D57E;
+			projectDirPath = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark";
+			projectRoot = "";
+			targets = (
+				EA7E46BC38BE47A1AA60CA49 /* ALL_BUILD */,
+				8272D582C6AA49869840AD74 /* ZERO_CHECK */,
+				570D803ABBF8481199CD27F5 /* benchmark */,
+				B9E7B8AEFEC94D6DBE11DECB /* benchmark_main */,
+				1C4109C74F1146CF82C10A36 /* install */,
+				AABD1A1608A9450E8A3CD68D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C0D086404104AACBC21B00D /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/CMakeScripts/package_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		12AFF6679B53451C89EF721E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		3EB93D01C1FB40FCA2C6702C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6DD7A9095214443DA841FC65 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		CD7C5CD7C285408D83AA2899 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E1B2651A16CA4D9E92C6092D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EC178A7CF7774D61AA843B50 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F3BABE9990C8479B9AF16E43 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BB232431CCA4823815CAD6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994847DB4FAF4AD98C1586D5 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark.cc */,
+				B6720CCB01124E249F0AC290 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_register.cc */,
+				9CFC2CAAF9F14D57B441B567 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/colorprint.cc */,
+				FB138DF331B14202A97650F8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/commandlineflags.cc */,
+				3114BB1B7D3748229F52F7D4 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/complexity.cc */,
+				F9762288E4CA49088FB6F58C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/console_reporter.cc */,
+				7ABB26646AD644B784C7214A /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/counter.cc */,
+				F0916190DD054D5F90186E5F /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/csv_reporter.cc */,
+				6A514C5E738A41A2956C354C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/json_reporter.cc */,
+				7457648D4FF74E019C56D106 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/reporter.cc */,
+				C64CFFFAA7854A66BFE52F77 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sleep.cc */,
+				53AA81134CA74F929859F060 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/statistics.cc */,
+				58E2881430104ADAA80D7870 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/string_util.cc */,
+				15F511C572634E348D741A3B /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/sysinfo.cc */,
+				40B9B8FFB193457492BFFF54 /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/timers.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7057029944D45838A2B3812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8ED6F88B3F4200BD105D9C /* /Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/benchmark_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		267841D245A6492C8AA421C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA7E46BC38BE47A1AA60CA49 /* ALL_BUILD */;
+			targetProxy = 26F2ED63B1E84FD2959A4379 /* PBXContainerItemProxy */;
+		};
+		395803824F9541C98E39E2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8272D582C6AA49869840AD74 /* ZERO_CHECK */;
+			targetProxy = B1E72B8A9F0140FC9AE09CF9 /* PBXContainerItemProxy */;
+		};
+		44279B3D43DF4F359A697CFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA7E46BC38BE47A1AA60CA49 /* ALL_BUILD */;
+			targetProxy = 594E1ADA96F3458BB208E632 /* PBXContainerItemProxy */;
+		};
+		52B9DE689AAD4964A991CBCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8272D582C6AA49869840AD74 /* ZERO_CHECK */;
+			targetProxy = AB3DE18A6B454BB18284456C /* PBXContainerItemProxy */;
+		};
+		69FAD8317CEE4987BFCF436D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8272D582C6AA49869840AD74 /* ZERO_CHECK */;
+			targetProxy = 6AFCCD8D08C741C59762A923 /* PBXContainerItemProxy */;
+		};
+		B416B63E003C4782A1D3AA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 570D803ABBF8481199CD27F5 /* benchmark */;
+			targetProxy = C286B4805D934C209981F97D /* PBXContainerItemProxy */;
+		};
+		E7AF533788B941F882B9A7F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9E7B8AEFEC94D6DBE11DECB /* benchmark_main */;
+			targetProxy = 331E8D94E8D848AC9692D7AC /* PBXContainerItemProxy */;
+		};
+		F252FF962DAC46FCB238905A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 570D803ABBF8481199CD27F5 /* benchmark */;
+			targetProxy = 8B3152E59F7C46BE9BF1A411 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03716B5B13CD457B8F1D79A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		064E2B5D3C6C44D1900A9A2C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		104221E5B4234BEB83617F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		20035CFE2C5E45079D29BFEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		41CA1AF51E4E43F8A56250CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4A13644FA4E94F48BB7B0A2C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4B5659C6C1AE4C86BB5A83F9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		54AAB13769F54E12BA778EA7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		54E51ED96CFE422299BD3C52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/build";
+			};
+			name = Release;
+		};
+		61E9DCA4BC4C42FD87307EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		689EB3500259469E85992F89 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9402851CB43C43DD981402CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		981BD05C946E4D48915254EC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9B9FBCC8224B48CDBDF05564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/build";
+			};
+			name = Debug;
+		};
+		9CCEA27A2931454F8E3E8D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9E33101B79CB45ABB3F594F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A29A2F31C8CF4B63A6CF0D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B0B029D08B954915AE743209 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B4C2C7763C00489D8AD53227 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BF33946EE4C4430295E06849 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C0E01B5EE7DF41FBAD07720A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C26ABEE042E145BBA734C385 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/build";
+			};
+			name = MinSizeRel;
+		};
+		CA10B9F75E1040FA8BB7BAD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D957DCA32E8D4E9B98253F8A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DB2DD570901C490980C4D278 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DE73E38BE7CB4BAAB44AD50F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/build";
+			};
+			name = RelWithDebInfo;
+		};
+		E9394135828D4081A1E04855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F443B0687E94449F9C04CD5A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/llvm/Source/llvm_xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08D4475E17084F19AC58316F /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20035CFE2C5E45079D29BFEF /* Debug */,
+				61E9DCA4BC4C42FD87307EFA /* Release */,
+				F443B0687E94449F9C04CD5A /* MinSizeRel */,
+				4B5659C6C1AE4C86BB5A83F9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		786340842D894D7780294124 /* Build configuration list for PBXNativeTarget "benchmark_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E01B5EE7DF41FBAD07720A /* Debug */,
+				41CA1AF51E4E43F8A56250CF /* Release */,
+				BF33946EE4C4430295E06849 /* MinSizeRel */,
+				B0B029D08B954915AE743209 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8ACA9455143B4F7C85DD0DE0 /* Build configuration list for PBXNativeTarget "benchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9394135828D4081A1E04855 /* Debug */,
+				104221E5B4234BEB83617F73 /* Release */,
+				689EB3500259469E85992F89 /* MinSizeRel */,
+				981BD05C946E4D48915254EC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A7412B6EC8E6459182B196A1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CCEA27A2931454F8E3E8D17 /* Debug */,
+				9E33101B79CB45ABB3F594F9 /* Release */,
+				064E2B5D3C6C44D1900A9A2C /* MinSizeRel */,
+				54AAB13769F54E12BA778EA7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C315B1E39B7A4800860DE6CA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03716B5B13CD457B8F1D79A0 /* Debug */,
+				CA10B9F75E1040FA8BB7BAD8 /* Release */,
+				4A13644FA4E94F48BB7B0A2C /* MinSizeRel */,
+				B4C2C7763C00489D8AD53227 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CDB1665B337D485AB7CDE8DB /* Build configuration list for PBXProject "benchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9FBCC8224B48CDBDF05564 /* Debug */,
+				54E51ED96CFE422299BD3C52 /* Release */,
+				C26ABEE042E145BBA734C385 /* MinSizeRel */,
+				DE73E38BE7CB4BAAB44AD50F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E013A0288C034D1D8DA6AEE9 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9402851CB43C43DD981402CB /* Debug */,
+				A29A2F31C8CF4B63A6CF0D7A /* Release */,
+				D957DCA32E8D4E9B98253F8A /* MinSizeRel */,
+				DB2DD570901C490980C4D278 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ADB2690FA0449788C453657 /* Project object */;
+}
