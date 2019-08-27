@@ -1,0 +1,1012 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA00447C155D94FF0028A012 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447B155D94FF0028A012 /* Cocoa.framework */; };
+		DA0044A2155D950A0028A012 /* XPMArgumentPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0214FD3BED0097C754 /* XPMArgumentPackage.m */; };
+		DA0044A3155D950E0028A012 /* XPMArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0414FD3BED0097C754 /* XPMArgumentParser.m */; };
+		DA0044A4155D95110028A012 /* XPMArgumentSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0614FD3BED0097C754 /* XPMArgumentSignature.m */; };
+		DA0044AE155D966F0028A012 /* XPMArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0044AD155D966F0028A012 /* XPMArguments.h */; };
+		DA0044B1155D99FF0028A012 /* XPMCountedArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0044AF155D99FF0028A012 /* XPMCountedArgument.h */; };
+		DA0044B2155D99FF0028A012 /* XPMCountedArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044B0155D99FF0028A012 /* XPMCountedArgument.m */; };
+		DA0044B7155D9B2F0028A012 /* XPMValuedArgument.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0044B5155D9B2F0028A012 /* XPMValuedArgument.h */; };
+		DA0044B8155D9B2F0028A012 /* XPMValuedArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044B6155D9B2F0028A012 /* XPMValuedArgument.m */; };
+		DA0044C0155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0044BE155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.h */; };
+		DA0044C1155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044BF155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.m */; };
+		DA0044C7155DC1160028A012 /* NSString+Indenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0044C5155DC1160028A012 /* NSString+Indenter.h */; };
+		DA0044C8155DC1160028A012 /* NSString+Indenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044C6155DC1160028A012 /* NSString+Indenter.m */; };
+		DA01E3051A8471E20012BCAE /* ArgumentParser-Dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */; };
+		DA01E30C1A84722E0012BCAE /* XPMParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01E30B1A84722E0012BCAE /* XPMParserTests.m */; };
+		DA01E30E1A8473960012BCAE /* XPMPackageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01E30D1A8473960012BCAE /* XPMPackageTests.m */; };
+		DA01E3101A8474470012BCAE /* XPMArgumentNormalizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01E30F1A8474470012BCAE /* XPMArgumentNormalizerTests.m */; };
+		DA01E3121A8474C10012BCAE /* XPMAttributedArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01E3111A8474C10012BCAE /* XPMAttributedArrayTests.m */; };
+		DA01E3141A8475370012BCAE /* XPMArgumentSignatureFormatConstructionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01E3131A8475370012BCAE /* XPMArgumentSignatureFormatConstructionTests.m */; };
+		DA01E3161A8475F10012BCAE /* XPMSignatureHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA01E3151A8475F10012BCAE /* XPMSignatureHashTests.m */; };
+		DA17B91F1565961C00BDDA7E /* NSScanner+EscapedScanning.h in Headers */ = {isa = PBXBuildFile; fileRef = DA17B91D1565961C00BDDA7E /* NSScanner+EscapedScanning.h */; };
+		DA17B9201565961C00BDDA7E /* NSScanner+EscapedScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17B91E1565961C00BDDA7E /* NSScanner+EscapedScanning.m */; };
+		DA3551D7186AC1F900EF7AAA /* ArgumentParser-Dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */; };
+		DA3551D8186AC2E900EF7AAA /* ArgumentParser-Dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */; };
+		DA42159A15629EF800F82E8E /* XPMMutableAttributedArray.h in Headers */ = {isa = PBXBuildFile; fileRef = DA42159815629EF800F82E8E /* XPMMutableAttributedArray.h */; };
+		DA42159B15629EF800F82E8E /* XPMMutableAttributedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42159915629EF800F82E8E /* XPMMutableAttributedArray.m */; };
+		DA4215A21562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4215A01562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.h */; };
+		DA4215A31562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215A11562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.m */; };
+		DA4215AB1562DB0C00F82E8E /* NSDictionary+RubyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4215A91562DB0C00F82E8E /* NSDictionary+RubyDescription.h */; };
+		DA4215AC1562DB0C00F82E8E /* NSDictionary+RubyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215AA1562DB0C00F82E8E /* NSDictionary+RubyDescription.m */; };
+		DA4215AF1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4215AD1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.h */; };
+		DA4215B01562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215AE1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.m */; };
+		DA4215B61562E09100F82E8E /* XPMArgsKonstants.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4215B41562E09100F82E8E /* XPMArgsKonstants.h */; };
+		DA4215B71562E09100F82E8E /* XPMArgsKonstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215B51562E09100F82E8E /* XPMArgsKonstants.m */; };
+		DA59C5D118624A3C00DDE821 /* ArgumentParser-Dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */; };
+		DA87348A18970AB800113896 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA00447B155D94FF0028A012 /* Cocoa.framework */; };
+		DA8734A918970AE600113896 /* XPMArgumentPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0214FD3BED0097C754 /* XPMArgumentPackage.m */; };
+		DA8734AA18970AEB00113896 /* XPMArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0414FD3BED0097C754 /* XPMArgumentParser.m */; };
+		DA8734AB18970AEF00113896 /* XPMArguments_Coalescer_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044BF155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.m */; };
+		DA8734AC18970AF300113896 /* XPMArgsKonstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215B51562E09100F82E8E /* XPMArgsKonstants.m */; };
+		DA8734AD18970AF800113896 /* XPMMutableAttributedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DA42159915629EF800F82E8E /* XPMMutableAttributedArray.m */; };
+		DA8734AE18970AFE00113896 /* NSProcessInfo+XPMArgumentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215A11562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.m */; };
+		DA8734AF18970B0100113896 /* NSArray+XPMArgumentsNormalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215AE1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.m */; };
+		DA8734B018970B0400113896 /* NSString+Indenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044C6155DC1160028A012 /* NSString+Indenter.m */; };
+		DA8734B118970B0700113896 /* NSDictionary+RubyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4215AA1562DB0C00F82E8E /* NSDictionary+RubyDescription.m */; };
+		DA8734B218970B0B00113896 /* NSScanner+EscapedScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17B91E1565961C00BDDA7E /* NSScanner+EscapedScanning.m */; };
+		DA8734B318970B1200113896 /* XPMArgumentSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2F0614FD3BED0097C754 /* XPMArgumentSignature.m */; };
+		DA8734B418970B1600113896 /* XPMCountedArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044B0155D99FF0028A012 /* XPMCountedArgument.m */; };
+		DA8734B518970B1900113896 /* XPMValuedArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0044B6155D9B2F0028A012 /* XPMValuedArgument.m */; };
+		DACF2EC914FD3B2F0097C754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACF2EC814FD3B2F0097C754 /* Foundation.framework */; };
+		DACF2ECC14FD3B2F0097C754 /* desc.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2ECB14FD3B2F0097C754 /* desc.m */; };
+		DACF2EE114FD3B630097C754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACF2EC814FD3B2F0097C754 /* Foundation.framework */; };
+		DACF2EED14FD3B710097C754 /* long-desc.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2EEC14FD3B710097C754 /* long-desc.m */; };
+		DACF2EF414FD3B7A0097C754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACF2EC814FD3B2F0097C754 /* Foundation.framework */; };
+		DACF2F0014FD3B840097C754 /* spiffy.m in Sources */ = {isa = PBXBuildFile; fileRef = DACF2EFF14FD3B840097C754 /* spiffy.m */; };
+		DADCF2C91873E48200B47AF1 /* NSString+FilledString.m in Sources */ = {isa = PBXBuildFile; fileRef = DADCF2C81873E48200B47AF1 /* NSString+FilledString.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA0044A5155D951C0028A012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACF2EBB14FD3B2F0097C754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA004479155D94FF0028A012;
+			remoteInfo = ArgumentParser;
+		};
+		DA0044A7155D95270028A012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACF2EBB14FD3B2F0097C754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA004479155D94FF0028A012;
+			remoteInfo = ArgumentParser;
+		};
+		DA0044A9155D952C0028A012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACF2EBB14FD3B2F0097C754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA004479155D94FF0028A012;
+			remoteInfo = ArgumentParser;
+		};
+		DA01E3061A8471E20012BCAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACF2EBB14FD3B2F0097C754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA004479155D94FF0028A012;
+			remoteInfo = "ArgumentParser-Dynamic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DACF2EC214FD3B2F0097C754 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DACF2EDD14FD3B630097C754 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DACF2EF014FD3B7A0097C754 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "ArgumentParser-Dynamic.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA00447B155D94FF0028A012 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA004480155D94FF0028A012 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA004483155D94FF0028A012 /* ArgumentParser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArgumentParser-Prefix.pch"; sourceTree = "<group>"; };
+		DA0044AD155D966F0028A012 /* XPMArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMArguments.h; sourceTree = "<group>"; };
+		DA0044AF155D99FF0028A012 /* XPMCountedArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMCountedArgument.h; sourceTree = "<group>"; };
+		DA0044B0155D99FF0028A012 /* XPMCountedArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMCountedArgument.m; sourceTree = "<group>"; };
+		DA0044B5155D9B2F0028A012 /* XPMValuedArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMValuedArgument.h; sourceTree = "<group>"; };
+		DA0044B6155D9B2F0028A012 /* XPMValuedArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMValuedArgument.m; sourceTree = "<group>"; };
+		DA0044BE155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMArguments_Coalescer_Internal.h; sourceTree = "<group>"; };
+		DA0044BF155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMArguments_Coalescer_Internal.m; sourceTree = "<group>"; };
+		DA0044C5155DC1160028A012 /* NSString+Indenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Indenter.h"; sourceTree = "<group>"; };
+		DA0044C6155DC1160028A012 /* NSString+Indenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Indenter.m"; sourceTree = "<group>"; };
+		DA01E2FF1A8471E20012BCAE /* ArgumentParser-Dynamic Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ArgumentParser-Dynamic Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA01E3021A8471E20012BCAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA01E30B1A84722E0012BCAE /* XPMParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMParserTests.m; sourceTree = "<group>"; };
+		DA01E30D1A8473960012BCAE /* XPMPackageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMPackageTests.m; sourceTree = "<group>"; };
+		DA01E30F1A8474470012BCAE /* XPMArgumentNormalizerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMArgumentNormalizerTests.m; sourceTree = "<group>"; };
+		DA01E3111A8474C10012BCAE /* XPMAttributedArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMAttributedArrayTests.m; sourceTree = "<group>"; };
+		DA01E3131A8475370012BCAE /* XPMArgumentSignatureFormatConstructionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMArgumentSignatureFormatConstructionTests.m; sourceTree = "<group>"; };
+		DA01E3151A8475F10012BCAE /* XPMSignatureHashTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMSignatureHashTests.m; sourceTree = "<group>"; };
+		DA119F30156405FA00BDFBAB /* XPMArgumentPackage_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPMArgumentPackage_Private.h; sourceTree = "<group>"; };
+		DA17B91D1565961C00BDDA7E /* NSScanner+EscapedScanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScanner+EscapedScanning.h"; sourceTree = "<group>"; };
+		DA17B91E1565961C00BDDA7E /* NSScanner+EscapedScanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScanner+EscapedScanning.m"; sourceTree = "<group>"; };
+		DA42159815629EF800F82E8E /* XPMMutableAttributedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMMutableAttributedArray.h; sourceTree = "<group>"; };
+		DA42159915629EF800F82E8E /* XPMMutableAttributedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMMutableAttributedArray.m; sourceTree = "<group>"; };
+		DA4215A01562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSProcessInfo+XPMArgumentParser.h"; sourceTree = "<group>"; };
+		DA4215A11562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSProcessInfo+XPMArgumentParser.m"; sourceTree = "<group>"; };
+		DA4215A91562DB0C00F82E8E /* NSDictionary+RubyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RubyDescription.h"; sourceTree = "<group>"; };
+		DA4215AA1562DB0C00F82E8E /* NSDictionary+RubyDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RubyDescription.m"; sourceTree = "<group>"; };
+		DA4215AD1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XPMArgumentsNormalizer.h"; sourceTree = "<group>"; };
+		DA4215AE1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XPMArgumentsNormalizer.m"; sourceTree = "<group>"; };
+		DA4215B41562E09100F82E8E /* XPMArgsKonstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMArgsKonstants.h; sourceTree = "<group>"; };
+		DA4215B51562E09100F82E8E /* XPMArgsKonstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMArgsKonstants.m; sourceTree = "<group>"; };
+		DA87347118970A5B00113896 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DA87348918970AB800113896 /* libArgumentParser-Static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libArgumentParser-Static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA595061561B3610063A5B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DACF2EC414FD3B2F0097C754 /* desc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = desc; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACF2EC814FD3B2F0097C754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DACF2ECB14FD3B2F0097C754 /* desc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = desc.m; sourceTree = "<group>"; };
+		DACF2ECE14FD3B2F0097C754 /* example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "example-Prefix.pch"; sourceTree = "<group>"; };
+		DACF2EDF14FD3B630097C754 /* long-desc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "long-desc"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACF2EEC14FD3B710097C754 /* long-desc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "long-desc.m"; sourceTree = "<group>"; };
+		DACF2EF214FD3B7A0097C754 /* spiffy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = spiffy; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACF2EFF14FD3B840097C754 /* spiffy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = spiffy.m; sourceTree = "<group>"; };
+		DACF2F0114FD3BED0097C754 /* XPMArgumentPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPMArgumentPackage.h; path = ArgumentParser/XPMArgumentPackage.h; sourceTree = SOURCE_ROOT; };
+		DACF2F0214FD3BED0097C754 /* XPMArgumentPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPMArgumentPackage.m; path = ArgumentParser/XPMArgumentPackage.m; sourceTree = SOURCE_ROOT; };
+		DACF2F0314FD3BED0097C754 /* XPMArgumentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPMArgumentParser.h; path = ArgumentParser/XPMArgumentParser.h; sourceTree = SOURCE_ROOT; };
+		DACF2F0414FD3BED0097C754 /* XPMArgumentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPMArgumentParser.m; path = ArgumentParser/XPMArgumentParser.m; sourceTree = SOURCE_ROOT; };
+		DACF2F0514FD3BED0097C754 /* XPMArgumentSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPMArgumentSignature.h; path = ArgumentParser/XPMArgumentSignature.h; sourceTree = SOURCE_ROOT; };
+		DACF2F0614FD3BED0097C754 /* XPMArgumentSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPMArgumentSignature.m; path = ArgumentParser/XPMArgumentSignature.m; sourceTree = SOURCE_ROOT; };
+		DADCF2C71873E48200B47AF1 /* NSString+FilledString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FilledString.h"; sourceTree = "<group>"; };
+		DADCF2C81873E48200B47AF1 /* NSString+FilledString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilledString.m"; sourceTree = "<group>"; };
+		DAEF09EB1561682800BED247 /* XPMArgumentSignature_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPMArgumentSignature_Private.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA004477155D94FF0028A012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA00447C155D94FF0028A012 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA01E2FC1A8471E20012BCAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA01E3051A8471E20012BCAE /* ArgumentParser-Dynamic.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA87348618970AB800113896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA87348A18970AB800113896 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF2EC114FD3B2F0097C754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3551D8186AC2E900EF7AAA /* ArgumentParser-Dynamic.dylib in Frameworks */,
+				DACF2EC914FD3B2F0097C754 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF2EDC14FD3B630097C754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3551D7186AC1F900EF7AAA /* ArgumentParser-Dynamic.dylib in Frameworks */,
+				DACF2EE114FD3B630097C754 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF2EEF14FD3B7A0097C754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA59C5D118624A3C00DDE821 /* ArgumentParser-Dynamic.dylib in Frameworks */,
+				DACF2EF414FD3B7A0097C754 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA00447D155D94FF0028A012 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA004480155D94FF0028A012 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DA004481155D94FF0028A012 /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				DA0044AD155D966F0028A012 /* XPMArguments.h */,
+				DA0044B3155D9A050028A012 /* Signatures */,
+				DA4215A81562AD3500F82E8E /* Categories */,
+				DACF2F0114FD3BED0097C754 /* XPMArgumentPackage.h */,
+				DA119F30156405FA00BDFBAB /* XPMArgumentPackage_Private.h */,
+				DACF2F0214FD3BED0097C754 /* XPMArgumentPackage.m */,
+				DACF2F0314FD3BED0097C754 /* XPMArgumentParser.h */,
+				DACF2F0414FD3BED0097C754 /* XPMArgumentParser.m */,
+				DA0044BE155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.h */,
+				DA0044BF155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.m */,
+				DA4215B41562E09100F82E8E /* XPMArgsKonstants.h */,
+				DA4215B51562E09100F82E8E /* XPMArgsKonstants.m */,
+				DA42159815629EF800F82E8E /* XPMMutableAttributedArray.h */,
+				DA42159915629EF800F82E8E /* XPMMutableAttributedArray.m */,
+				DA004482155D94FF0028A012 /* Supporting Files */,
+			);
+			path = ArgumentParser;
+			sourceTree = "<group>";
+		};
+		DA004482155D94FF0028A012 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA004483155D94FF0028A012 /* ArgumentParser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA0044B3155D9A050028A012 /* Signatures */ = {
+			isa = PBXGroup;
+			children = (
+				DACF2F0514FD3BED0097C754 /* XPMArgumentSignature.h */,
+				DAEF09EB1561682800BED247 /* XPMArgumentSignature_Private.h */,
+				DACF2F0614FD3BED0097C754 /* XPMArgumentSignature.m */,
+				DA0044AF155D99FF0028A012 /* XPMCountedArgument.h */,
+				DA0044B0155D99FF0028A012 /* XPMCountedArgument.m */,
+				DA0044B5155D9B2F0028A012 /* XPMValuedArgument.h */,
+				DA0044B6155D9B2F0028A012 /* XPMValuedArgument.m */,
+			);
+			name = Signatures;
+			sourceTree = "<group>";
+		};
+		DA01E3001A8471E20012BCAE /* ArgumentParser-Dynamic Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA01E30B1A84722E0012BCAE /* XPMParserTests.m */,
+				DA01E30D1A8473960012BCAE /* XPMPackageTests.m */,
+				DA01E30F1A8474470012BCAE /* XPMArgumentNormalizerTests.m */,
+				DA01E3111A8474C10012BCAE /* XPMAttributedArrayTests.m */,
+				DA01E3131A8475370012BCAE /* XPMArgumentSignatureFormatConstructionTests.m */,
+				DA01E3151A8475F10012BCAE /* XPMSignatureHashTests.m */,
+				DA01E3011A8471E20012BCAE /* Supporting Files */,
+			);
+			path = "ArgumentParser-Dynamic Tests";
+			sourceTree = "<group>";
+		};
+		DA01E3011A8471E20012BCAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA01E3021A8471E20012BCAE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA4215A81562AD3500F82E8E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DA4215A01562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.h */,
+				DA4215A11562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.m */,
+				DA4215AD1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.h */,
+				DA4215AE1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.m */,
+				DA0044C5155DC1160028A012 /* NSString+Indenter.h */,
+				DA0044C6155DC1160028A012 /* NSString+Indenter.m */,
+				DA4215A91562DB0C00F82E8E /* NSDictionary+RubyDescription.h */,
+				DA4215AA1562DB0C00F82E8E /* NSDictionary+RubyDescription.m */,
+				DA17B91D1565961C00BDDA7E /* NSScanner+EscapedScanning.h */,
+				DA17B91E1565961C00BDDA7E /* NSScanner+EscapedScanning.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		DACF2EB914FD3B2F0097C754 = {
+			isa = PBXGroup;
+			children = (
+				DAA595061561B3610063A5B4 /* README.md */,
+				DACF2ECA14FD3B2F0097C754 /* example */,
+				DA004481155D94FF0028A012 /* ArgumentParser */,
+				DA01E3001A8471E20012BCAE /* ArgumentParser-Dynamic Tests */,
+				DACF2EC714FD3B2F0097C754 /* Frameworks */,
+				DACF2EC514FD3B2F0097C754 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DACF2EC514FD3B2F0097C754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DACF2EC414FD3B2F0097C754 /* desc */,
+				DACF2EDF14FD3B630097C754 /* long-desc */,
+				DACF2EF214FD3B7A0097C754 /* spiffy */,
+				DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */,
+				DA87348918970AB800113896 /* libArgumentParser-Static.a */,
+				DA01E2FF1A8471E20012BCAE /* ArgumentParser-Dynamic Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DACF2EC714FD3B2F0097C754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DACF2EC814FD3B2F0097C754 /* Foundation.framework */,
+				DA00447B155D94FF0028A012 /* Cocoa.framework */,
+				DA87347118970A5B00113896 /* XCTest.framework */,
+				DA00447D155D94FF0028A012 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DACF2ECA14FD3B2F0097C754 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				DACF2EFF14FD3B840097C754 /* spiffy.m */,
+				DACF2EEC14FD3B710097C754 /* long-desc.m */,
+				DACF2ECB14FD3B2F0097C754 /* desc.m */,
+				DACF2ECD14FD3B2F0097C754 /* Supporting Files */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		DACF2ECD14FD3B2F0097C754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DACF2ECE14FD3B2F0097C754 /* example-Prefix.pch */,
+				DADCF2C71873E48200B47AF1 /* NSString+FilledString.h */,
+				DADCF2C81873E48200B47AF1 /* NSString+FilledString.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DA004478155D94FF0028A012 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0044AE155D966F0028A012 /* XPMArguments.h in Headers */,
+				DA0044B1155D99FF0028A012 /* XPMCountedArgument.h in Headers */,
+				DA0044B7155D9B2F0028A012 /* XPMValuedArgument.h in Headers */,
+				DA0044C0155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.h in Headers */,
+				DA0044C7155DC1160028A012 /* NSString+Indenter.h in Headers */,
+				DA42159A15629EF800F82E8E /* XPMMutableAttributedArray.h in Headers */,
+				DA4215A21562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.h in Headers */,
+				DA4215AB1562DB0C00F82E8E /* NSDictionary+RubyDescription.h in Headers */,
+				DA4215AF1562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.h in Headers */,
+				DA4215B61562E09100F82E8E /* XPMArgsKonstants.h in Headers */,
+				DA17B91F1565961C00BDDA7E /* NSScanner+EscapedScanning.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA87348718970AB800113896 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DA004479155D94FF0028A012 /* ArgumentParser-Dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA00449C155D94FF0028A012 /* Build configuration list for PBXNativeTarget "ArgumentParser-Dynamic" */;
+			buildPhases = (
+				DA004476155D94FF0028A012 /* Sources */,
+				DA004477155D94FF0028A012 /* Frameworks */,
+				DA004478155D94FF0028A012 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ArgumentParser-Dynamic";
+			productName = ArgumentParser;
+			productReference = DA00447A155D94FF0028A012 /* ArgumentParser-Dynamic.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DA01E2FE1A8471E20012BCAE /* ArgumentParser-Dynamic Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA01E3081A8471E20012BCAE /* Build configuration list for PBXNativeTarget "ArgumentParser-Dynamic Tests" */;
+			buildPhases = (
+				DA01E2FB1A8471E20012BCAE /* Sources */,
+				DA01E2FC1A8471E20012BCAE /* Frameworks */,
+				DA01E2FD1A8471E20012BCAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA01E3071A8471E20012BCAE /* PBXTargetDependency */,
+			);
+			name = "ArgumentParser-Dynamic Tests";
+			productName = "ArgumentParser-Dynamic Tests";
+			productReference = DA01E2FF1A8471E20012BCAE /* ArgumentParser-Dynamic Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA87348818970AB800113896 /* ArgumentParser-Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA8734A318970AB800113896 /* Build configuration list for PBXNativeTarget "ArgumentParser-Static" */;
+			buildPhases = (
+				DA87348518970AB800113896 /* Sources */,
+				DA87348618970AB800113896 /* Frameworks */,
+				DA87348718970AB800113896 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ArgumentParser-Static";
+			productName = "ArgumentParser-Static";
+			productReference = DA87348918970AB800113896 /* libArgumentParser-Static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DACF2EC314FD3B2F0097C754 /* desc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACF2ED314FD3B2F0097C754 /* Build configuration list for PBXNativeTarget "desc" */;
+			buildPhases = (
+				DACF2EC014FD3B2F0097C754 /* Sources */,
+				DACF2EC114FD3B2F0097C754 /* Frameworks */,
+				DACF2EC214FD3B2F0097C754 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA0044A6155D951C0028A012 /* PBXTargetDependency */,
+			);
+			name = desc;
+			productName = example;
+			productReference = DACF2EC414FD3B2F0097C754 /* desc */;
+			productType = "com.apple.product-type.tool";
+		};
+		DACF2EDE14FD3B630097C754 /* long-desc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACF2EE914FD3B630097C754 /* Build configuration list for PBXNativeTarget "long-desc" */;
+			buildPhases = (
+				DACF2EDB14FD3B630097C754 /* Sources */,
+				DACF2EDC14FD3B630097C754 /* Frameworks */,
+				DACF2EDD14FD3B630097C754 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA0044A8155D95270028A012 /* PBXTargetDependency */,
+			);
+			name = "long-desc";
+			productName = "long-desc";
+			productReference = DACF2EDF14FD3B630097C754 /* long-desc */;
+			productType = "com.apple.product-type.tool";
+		};
+		DACF2EF114FD3B7A0097C754 /* spiffy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACF2EFC14FD3B7A0097C754 /* Build configuration list for PBXNativeTarget "spiffy" */;
+			buildPhases = (
+				DACF2EEE14FD3B7A0097C754 /* Sources */,
+				DACF2EEF14FD3B7A0097C754 /* Frameworks */,
+				DACF2EF014FD3B7A0097C754 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA0044AA155D952C0028A012 /* PBXTargetDependency */,
+			);
+			name = spiffy;
+			productName = spiffy;
+			productReference = DACF2EF214FD3B7A0097C754 /* spiffy */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DACF2EBB14FD3B2F0097C754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XPM;
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					DA01E2FE1A8471E20012BCAE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DACF2EBE14FD3B2F0097C754 /* Build configuration list for PBXProject "ArgumentParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DACF2EB914FD3B2F0097C754;
+			productRefGroup = DACF2EC514FD3B2F0097C754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DACF2EC314FD3B2F0097C754 /* desc */,
+				DACF2EDE14FD3B630097C754 /* long-desc */,
+				DACF2EF114FD3B7A0097C754 /* spiffy */,
+				DA004479155D94FF0028A012 /* ArgumentParser-Dynamic */,
+				DA87348818970AB800113896 /* ArgumentParser-Static */,
+				DA01E2FE1A8471E20012BCAE /* ArgumentParser-Dynamic Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA01E2FD1A8471E20012BCAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA004476155D94FF0028A012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0044A2155D950A0028A012 /* XPMArgumentPackage.m in Sources */,
+				DA0044A3155D950E0028A012 /* XPMArgumentParser.m in Sources */,
+				DA0044A4155D95110028A012 /* XPMArgumentSignature.m in Sources */,
+				DA0044B2155D99FF0028A012 /* XPMCountedArgument.m in Sources */,
+				DA0044B8155D9B2F0028A012 /* XPMValuedArgument.m in Sources */,
+				DA0044C1155DA7BC0028A012 /* XPMArguments_Coalescer_Internal.m in Sources */,
+				DA0044C8155DC1160028A012 /* NSString+Indenter.m in Sources */,
+				DA42159B15629EF800F82E8E /* XPMMutableAttributedArray.m in Sources */,
+				DA4215A31562AC4100F82E8E /* NSProcessInfo+XPMArgumentParser.m in Sources */,
+				DA4215AC1562DB0C00F82E8E /* NSDictionary+RubyDescription.m in Sources */,
+				DA4215B01562DC0F00F82E8E /* NSArray+XPMArgumentsNormalizer.m in Sources */,
+				DA4215B71562E09100F82E8E /* XPMArgsKonstants.m in Sources */,
+				DA17B9201565961C00BDDA7E /* NSScanner+EscapedScanning.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA01E2FB1A8471E20012BCAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA01E30C1A84722E0012BCAE /* XPMParserTests.m in Sources */,
+				DA01E3121A8474C10012BCAE /* XPMAttributedArrayTests.m in Sources */,
+				DA01E3161A8475F10012BCAE /* XPMSignatureHashTests.m in Sources */,
+				DA01E3101A8474470012BCAE /* XPMArgumentNormalizerTests.m in Sources */,
+				DA01E30E1A8473960012BCAE /* XPMPackageTests.m in Sources */,
+				DA01E3141A8475370012BCAE /* XPMArgumentSignatureFormatConstructionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA87348518970AB800113896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8734B218970B0B00113896 /* NSScanner+EscapedScanning.m in Sources */,
+				DA8734B118970B0700113896 /* NSDictionary+RubyDescription.m in Sources */,
+				DA8734B518970B1900113896 /* XPMValuedArgument.m in Sources */,
+				DA8734B318970B1200113896 /* XPMArgumentSignature.m in Sources */,
+				DA8734AE18970AFE00113896 /* NSProcessInfo+XPMArgumentParser.m in Sources */,
+				DA8734AD18970AF800113896 /* XPMMutableAttributedArray.m in Sources */,
+				DA8734B018970B0400113896 /* NSString+Indenter.m in Sources */,
+				DA8734AA18970AEB00113896 /* XPMArgumentParser.m in Sources */,
+				DA8734AB18970AEF00113896 /* XPMArguments_Coalescer_Internal.m in Sources */,
+				DA8734B418970B1600113896 /* XPMCountedArgument.m in Sources */,
+				DA8734A918970AE600113896 /* XPMArgumentPackage.m in Sources */,
+				DA8734AF18970B0100113896 /* NSArray+XPMArgumentsNormalizer.m in Sources */,
+				DA8734AC18970AF300113896 /* XPMArgsKonstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF2EC014FD3B2F0097C754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACF2ECC14FD3B2F0097C754 /* desc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF2EDB14FD3B630097C754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DADCF2C91873E48200B47AF1 /* NSString+FilledString.m in Sources */,
+				DACF2EED14FD3B710097C754 /* long-desc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF2EEE14FD3B7A0097C754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACF2F0014FD3B840097C754 /* spiffy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA0044A6155D951C0028A012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA004479155D94FF0028A012 /* ArgumentParser-Dynamic */;
+			targetProxy = DA0044A5155D951C0028A012 /* PBXContainerItemProxy */;
+		};
+		DA0044A8155D95270028A012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA004479155D94FF0028A012 /* ArgumentParser-Dynamic */;
+			targetProxy = DA0044A7155D95270028A012 /* PBXContainerItemProxy */;
+		};
+		DA0044AA155D952C0028A012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA004479155D94FF0028A012 /* ArgumentParser-Dynamic */;
+			targetProxy = DA0044A9155D952C0028A012 /* PBXContainerItemProxy */;
+		};
+		DA01E3071A8471E20012BCAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA004479155D94FF0028A012 /* ArgumentParser-Dynamic */;
+			targetProxy = DA01E3061A8471E20012BCAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA00449D155D94FF0028A012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArgumentParser/ArgumentParser-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA00449E155D94FF0028A012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArgumentParser/ArgumentParser-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DA01E3091A8471E20012BCAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ArgumentParser-Dynamic Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mysteriouspants.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA01E30A1A8471E20012BCAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ArgumentParser-Dynamic Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mysteriouspants.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA8734A418970AB800113896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArgumentParser/ArgumentParser-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA8734A518970AB800113896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArgumentParser/ArgumentParser-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DACF2ED114FD3B2F0097C754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DACF2ED214FD3B2F0097C754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DACF2ED414FD3B2F0097C754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DACF2ED514FD3B2F0097C754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DACF2EEA14FD3B630097C754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DACF2EEB14FD3B630097C754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DACF2EFD14FD3B7A0097C754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DACF2EFE14FD3B7A0097C754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA00449C155D94FF0028A012 /* Build configuration list for PBXNativeTarget "ArgumentParser-Dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA00449D155D94FF0028A012 /* Debug */,
+				DA00449E155D94FF0028A012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA01E3081A8471E20012BCAE /* Build configuration list for PBXNativeTarget "ArgumentParser-Dynamic Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA01E3091A8471E20012BCAE /* Debug */,
+				DA01E30A1A8471E20012BCAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA8734A318970AB800113896 /* Build configuration list for PBXNativeTarget "ArgumentParser-Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA8734A418970AB800113896 /* Debug */,
+				DA8734A518970AB800113896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACF2EBE14FD3B2F0097C754 /* Build configuration list for PBXProject "ArgumentParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACF2ED114FD3B2F0097C754 /* Debug */,
+				DACF2ED214FD3B2F0097C754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACF2ED314FD3B2F0097C754 /* Build configuration list for PBXNativeTarget "desc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACF2ED414FD3B2F0097C754 /* Debug */,
+				DACF2ED514FD3B2F0097C754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACF2EE914FD3B630097C754 /* Build configuration list for PBXNativeTarget "long-desc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACF2EEA14FD3B630097C754 /* Debug */,
+				DACF2EEB14FD3B630097C754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACF2EFC14FD3B7A0097C754 /* Build configuration list for PBXNativeTarget "spiffy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACF2EFD14FD3B7A0097C754 /* Debug */,
+				DACF2EFE14FD3B7A0097C754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DACF2EBB14FD3B2F0097C754 /* Project object */;
+}

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of all the freakin targets because I'm freakin lazy!
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
