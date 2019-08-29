@@ -12,13 +12,13 @@ start:
     mov ax, data
     mov ds, ax  
     
-    ; 
+    ; 显示字符  DS:DX=串地址 '$'结束字符串
     mov dx, 2h
     mov ah, 9h
     int 21h
 
-    ; 
-    mov ax, 4c00h
+    ; 结束程序
+    mov ah, 4ch
     int 21h
 code ends  
 
