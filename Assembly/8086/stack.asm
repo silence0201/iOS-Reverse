@@ -13,6 +13,7 @@ data ends
 ; 代码段
 code segment
 start: 
+    ; 手动设置栈段和数据段
     mov ax, stack
     mov ss, ax   
     mov ax, data
