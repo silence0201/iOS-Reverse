@@ -44,7 +44,6 @@ sum:
     ; 预留10个字节的空间给局部变量 
     sub sp, 10  
     
-    ; -------- 业务逻辑 - begin
     ; 定义2个局部变量
     mov word ptr ss:[bp-2], 3 
     mov word ptr ss:[bp-4], 4 
@@ -55,8 +54,7 @@ sum:
     ; 访问栈中的参数
     mov ax, ss:[bp+4]
     add ax, ss:[bp+6] 
-    add ax, ss:[bp-6] 
-    ; -------- 业务逻辑 - end
+    add ax, ss:[bp-6] `
                        
     ; 恢复sp
     mov sp, bp
