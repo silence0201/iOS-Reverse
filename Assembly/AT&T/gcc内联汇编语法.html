@@ -1,0 +1,177 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    </head>
+    <body>
+        <div class="Blog_wz1" style="word-wrap: break-word;">
+    <span style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">1，gnu内联汇编的语法:</span><br style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <span style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">asm或__asm__("汇编代码");</span><br style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <span style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">指令必须包含在引号里</span><br style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <span style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">如果包含的指令超过一行 必须使用新行分隔符分隔</span>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <br>
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <br>
+    使用c全局变量, 不能在内联汇编中使用局部变量, 注意在汇编语言代码中值被用做内存位置, 而不是立即数值
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    如果不希望优化内联汇编, 则可以volatile修饰符如:__asm__ volatile（"code");
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    2，GCC内联汇编的扩展语法<br>
+    __asm__("assembly code":output locations:input operands:changed registers);<br>
+    第一部分是汇编代码<br>
+    第二部分是输出位置, 包含内联汇编代码的输出值的寄存器和内存位置列表<br>
+    第三部分是输入操作数，包含内联汇编代码输入值的寄存器和内存位置的列表<br>
+    第四部分是改动的寄存器， 内联汇编改变的任何其他寄存器的列表<br>
+    这几个部分可以不全有, 但是没有的还必须使用:分隔
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    1, 指定输入值和输出值， 输入值和输出值的列表格式为:<br>
+    "constraint"(variable), 其中variable是程序中声明的c变量, 在扩展asm格式中， 局部和全局变量都可以使用,<br>
+    使用constrant（约束)定义把变量存放到哪(输入)或从哪里传送变量(输出)<br>
+    约束使用单一的字符, 如下:<br>
+    约束&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 描述<br>
+    a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%eax, %ax, %al寄存器<br>
+    b&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%ebx, %bx, %bl寄存器<br>
+    c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%ecx, %cx, %cl寄存器<br>
+    d&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%edx, %dx, %dl寄存器<br>
+    S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%esi, %si寄存器<br>
+    D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%edi, %di寄存器<br>
+    r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用任何可用的通用寄存器<br>
+    q&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用%eax, %ebx, %ecx,%edx之一<br>
+    A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 对于64位值使用%eax, %edx寄存器<br>
+    f&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用浮点寄存器<br>
+    t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用第一个(顶部)的浮点寄存器<br>
+    u&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用第二个浮点寄存器<br>
+    m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用变量的内存位置<br>
+    o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用偏移内存位置<br>
+    V&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 只使用直接内存位置<br>
+    i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用立即整数值<br>
+    n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用值已知的立即整数值<br>
+    g&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 使用任何可用的寄存器和内存位置
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <br>
+    除了这些约束之外, 输出值还包含一个约束修饰符:<br>
+    输出修饰符&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 描述<br>
+    +&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可以读取和写入操作数<br>
+    =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 只能写入操作数<br>
+    %&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果有必要操作数可以和下一个操作数切换<br>
+    &amp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 在内联函数完成之前, 可以删除和重新使用操作数
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    如:<br>
+    __asm__("assembly code": "=a"(result):"d"(data1),"c"(data2));<br>
+    把c变量data1存放在edx寄存器中, 把c变量data2存放到ecx寄存器中, 内联汇编的结果<br>
+    将存放在eax寄存器中, 然后传送给变量result
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <br>
+    在扩展的asm语句块中如果要使用寄存器必须使用两个百分号符号
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <br>
+    不一定总要在内联汇编代码中指定输出值, 一些汇编指令假定输入值包含输出值, 如movs指令
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    <br>
+    其他扩展内联汇编知识:<br>
+    1, 使用占位符<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 输入值存放在内联汇编段中声明的特定寄存器中, 并且在汇编指令中专门使用这些寄存器.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 虽然这种方式能够很好的处理只有几个输入值的情况, 但对于需要很多输入值的情况, 这<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 中方式显的有点繁琐. 为了帮助解决这个问题, 扩展asm格式提供了占位符, 可以在内联<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 汇编代码中使用它引用输入和输出值.<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 占位符是前面加上百分号的数字, 按照内联汇编中列出的每个输入和输出值在列表中的位置,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 每个值被赋予从0开始的地方. 然后就可以在汇编代码中引用占位符来表示值。<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 如果内联汇编代码中的输入和输出值共享程序中相同的c变量, 则可以指定使用占位符作为<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 约束值, 如:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; __asm__("imull %1, %0"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "=r"(data2)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "r"(data1), "0"(data2));<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 如输入输出值中共享相同的变量data2， 而在输入变量中则可以使用标记0作为输入参数的约束
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    2, 替换占位符<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 如果处理很多输入和输出值, 数字型的占位符很快就会变的很混乱, 为了使条理清晰 ,GNU汇编<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 器(从版本3.1开始)允许声明替换的名称作为占位符.替换的名称在声明输入值和输出值的段中<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 定义, 格式如下:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; %[name]"constraint"(variable)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 定义的值name成为内联汇编代码中变量的新的占位符号标识, 如下面的例子:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; __asm__("imull %[value1], %[value2]"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : [value2] "=r"(data2)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : [value1] "r"(data1), "0"(data2));
+    </p>
+    <p style="font-family:Simsun;font-size:medium;line-height:normal;white-space:normal;">
+    3, 改动寄存器列表<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 编译器假设输入值和输出值使用的寄存器会被改动, 并且相应的作出处理。程序员不需要在改动的<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 寄存器列表中包含这些值, 如果这样做了, 就会产生错误消息. 注意改动的寄存器列表中的寄存器<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 使用完整的寄存器名称, 而不像输入和输出寄存器定义的那样仅仅是单一字母。 在寄存器名称前面<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 使用百分号符号是可选的。<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 改动寄存器列表的正确使用方法是, 如果内联汇编代码使用了没有被初始化地声明为输入或者输出<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 值的其他任何寄存器 , 则要通知编译器。编译器必须知道这些寄存器, 以避免使用他们。如:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; int main(void) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int data1 = 10;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int result = 20;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __asm__("movl %1, %%eax\n\t"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "addl %%eax, %0"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "=r"(result)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "r"(data1), "0"(result)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "%eax");<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("The result is %d\n", result);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    4, 使用内存位置<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 虽然在内联汇编代码中使用寄存器比较快, 但是也可以直接使用c变量的内存位置。 约束m用于引用输入值<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 和输出值中的内存位置。 记住, 对于要求使用寄存器的汇编指令, 仍然必须使用寄存器, 所以不得不定义<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 保存数据的中间寄存器。如:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; int main(void) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int dividentd = 20;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int divisor = 5;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int result;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __asm__("divb %2\n\t"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "movl %%eax, %0"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "=m"(result)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : "a"(dividend), "m"(divisor));<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("The result is %d\n", result);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    5, 处理跳转<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 内联汇编语言代码也可以包含定义其中位置的标签。 可以实现一般的汇编条件分支和无条件分支， 如：<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; int main(void) {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int a = 10;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int b = 20;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int result;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __asm__("cmp %1, %2\n\t"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "jge greater\n\t"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "movl %1, %0\n\t"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "jmp end\n"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "greater:\n\t"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "movl %2, %0\n"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "end:"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :"=r"(result)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :"r"(a), "r"(b));<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("The larger value is %d\n", result);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 在内联汇编代码中使用标签时有两个限制。 第一个限制是只能跳转到相同的asm段内的标签，<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 不能从－个asm段跳转到另一个asm段中的标签。第二个限制更加复杂一点。 以上程序使用<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 标签greater和end。 但是, 这样有个潜在的问题, 查看汇编后的代码清单， 可以发现内联<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 汇编标签也被编码到了最终汇编后的代码中。 这意味着如果在c代码中还有另一个asm段, 就<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; 不能再次使用相同的标签, 否则会因为标签重复使用而导致错误消息。还有如果试图整合使用<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; c关键字(比如函数名称或者全局变量)的标签也会导致错误。
+    </p>                                   </div>
+    </body>
+</html>
