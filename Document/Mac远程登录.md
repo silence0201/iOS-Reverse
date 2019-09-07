@@ -146,3 +146,16 @@ iproxy 2222 22
 ```bash
 ssh -p 2222 root@127.0.0.1
 ```
+
+## 中文问题
+默认情况下，iOS终端不支持中文输入和显示
+解决方案：新建一个`~/.inputrc`文件，文件内容是:
+```
+// 不将中文字符转化为转义序列
+set convert-meta off 
+// 允许向终端输出中文
+set output-meta on
+// 允许向终端输入中文
+set meta-flag on 
+set input-meta on
+```
