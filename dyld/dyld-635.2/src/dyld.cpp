@@ -4898,6 +4898,7 @@ static void configureProcessRestrictions(const macho_header* mainExecutableMH)
 		}
 		bool usingSIP = (csr_check(CSR_ALLOW_TASK_FOR_PID) != 0);
 		uint32_t flags;
+		// 设置get_task_allow权限,在Debug模式下不受限
 		if ( csops(0, CS_OPS_STATUS, &flags, sizeof(flags)) != -1 ) {
 			// On OS X CS_RESTRICT means the program was signed with entitlements
 			if ( ((flags & CS_RESTRICT) == CS_RESTRICT) && usingSIP ) {
@@ -5906,6 +5907,7 @@ _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide,
 #endif
 
 	uintptr_t result = 0;
+	// 保存执行文件头部,后续可以根据头部访问其他信息
 	sMainExecutableMachHeader = mainExecutableMH;
 	sMainExecutableSlide = mainExecutableSlide;
 #if __MAC_OS_X_VERSION_MIN_REQUIRED
@@ -5928,14 +5930,17 @@ _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide,
 
 	CRSetCrashLogMessage("dyld: launch started");
 
+	// 设置上下文信息
 	setContext(mainExecutableMH, argc, argv, envp, apple);
 
 	// Pickup the pointer to the exec path.
+	// 获取可执行文件的路径
 	sExecPath = _simple_getenv(apple, "executable_path");
 
 	// <rdar://problem/13868260> Remove interim apple[0] transition code from dyld
 	if (!sExecPath) sExecPath = apple[0];
 	
+	// 将相对路径转换为绝对路径
 	if ( sExecPath[0] != '/' ) {
 		// have relative path, use cwd to make absolute
 		char cwdbuff[MAXPATHLEN];
@@ -5950,12 +5955,14 @@ _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide,
 	}
 
 	// Remember short name of process for later logging
+	// 获取文件的名称
 	sExecShortName = ::strrchr(sExecPath, '/');
 	if ( sExecShortName != NULL )
 		++sExecShortName;
 	else
 		sExecShortName = sExecPath;
 
+	// 配置进程是否受限
     configureProcessRestrictions(mainExecutableMH);
 
 #if __MAC_OS_X_VERSION_MIN_REQUIRED
@@ -5967,7 +5974,9 @@ _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide,
 	else
 #endif
 	{
+		// 检查设置环境变量
 		checkEnvironmentVariables(envp);
+		// 如果DYLD_FALLBACK为nil,将其设置为默认
 		defaultUninitializedFallbackPaths(envp);
 	}
 #if __MAC_OS_X_VERSION_MIN_REQUIRED
@@ -5981,13 +5990,17 @@ _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide,
 			sEnv.DYLD_FALLBACK_FRAMEWORK_PATH = sRestrictedFrameworkFallbackPaths;
 	}
 #endif
+	// 如果设置DYLD_PRINT_OPTS环境变量,则打印参数
 	if ( sEnv.DYLD_PRINT_OPTS )
 		printOptions(argv);
+	// 如果设置了DYLD_PRINT_ENV环境变量,则打印环境变量
 	if ( sEnv.DYLD_PRINT_ENV ) 
 		printEnvironmentVariables(envp);
+	// 获取当前运行架构的信息
 	getHostInfo(mainExecutableMH, mainExecutableSlide);
 
 	// load shared cache
+	// 检查共享缓存是否开启,在iOS中必须开启
 	checkSharedRegionDisable((dyld3::MachOLoaded*)mainExecutableMH, mainExecutableSlide);
 #if TARGET_IPHONE_SIMULATOR
 	// <HACK> until <rdar://30773711> is fixed
@@ -5995,6 +6008,7 @@ _main(const macho_header* mainExecutableMH, uintptr_t mainExecutableSlide,
 	// </HACK>
 #endif
 	if ( gLinkContext.sharedRegionMode != ImageLoader::kDontUseSharedRegion ) {
+		// 检查共享缓存是否映射到共享区域
 		mapSharedCache();
 	}
 	bool cacheCompatible = (sSharedCacheLoadInfo.loadAddress == nullptr) || (sSharedCacheLoadInfo.loadAddress->header.formatVersion == dyld3::closure::kFormatVersion);
@@ -6109,6 +6123,7 @@ reloadAllImages:
 
 		CRSetCrashLogMessage(sLoadingCrashMessage);
 		// instantiate ImageLoader for main executable
+		// 加载可执行文件并生成一个ImageLoader实例对象
 		sMainExecutable = instantiateFromLoadedImage(mainExecutableMH, mainExecutableSlide, sExecPath);
 		gLinkContext.mainExecutable = sMainExecutable;
 		gLinkContext.mainExecutableCodeSigned = hasCodeSignatureLoadCommand(mainExecutableMH);
@@ -6183,6 +6198,7 @@ reloadAllImages:
 		}
 
 		// load any inserted libraries
+		// 加载所有的DYLD_INSERT_LIBRARIES指定的库
 		if	( sEnv.DYLD_INSERT_LIBRARIES != NULL ) {
 			for (const char* const* lib = sEnv.DYLD_INSERT_LIBRARIES; *lib != NULL; ++lib) 
 				loadInsertedDylib(*lib);
@@ -6200,6 +6216,7 @@ reloadAllImages:
 			sMainExecutable->rebase(gLinkContext, -mainExecutableSlide);
 		}
 #endif
+		// 链接主程序
 		link(sMainExecutable, sEnv.DYLD_BIND_AT_LAUNCH, true, ImageLoader::RPathChain(NULL, NULL), -1);
 		sMainExecutable->setNeverUnloadRecursive();
 		if ( sMainExecutable->forceFlat() ) {
@@ -6210,6 +6227,7 @@ reloadAllImages:
 		// link any inserted libraries
 		// do this after linking main executable so that any dylibs pulled in by inserted 
 		// dylibs (e.g. libSystem) will not be in front of dylibs the program uses
+		// 链接插入的动态库
 		if ( sInsertedDylibCount > 0 ) {
 			for(unsigned int i=0; i < sInsertedDylibCount; ++i) {
 				ImageLoader* image = sAllImages[i+1];
@@ -6220,6 +6238,7 @@ reloadAllImages:
 			// register interposing info after all inserted libraries are bound so chaining works
 			for(unsigned int i=0; i < sInsertedDylibCount; ++i) {
 				ImageLoader* image = sAllImages[i+1];
+				// 注入符号插入
 				image->registerInterposing(gLinkContext);
 			}
 		}
@@ -6265,6 +6284,7 @@ reloadAllImages:
 
 		// apply interposing to initial set of images
 		for(int i=0; i < sImageRoots.size(); ++i) {
+			// 应用符号插入
 			sImageRoots[i]->applyInterposing(gLinkContext);
 		}
 		ImageLoader::applyInterposingToDyldCache(gLinkContext);
@@ -6286,6 +6306,7 @@ reloadAllImages:
 		}
 		
 		// <rdar://problem/12186933> do weak binding only after all inserted images linked
+		// 弱符号绑定
 		sMainExecutable->weakBind(gLinkContext);
 
 		// If cache has branch island dylibs, tell debugger about them
@@ -6325,6 +6346,7 @@ reloadAllImages:
 		notifyMonitoringDyldMain();
 
 		// find entry point for main executable
+		// 获取入口并执行LC_MAIN
 		result = (uintptr_t)sMainExecutable->getEntryFromLC_MAIN();
 		if ( result != 0 ) {
 			// main executable uses LC_MAIN, we need to use helper in libdyld to call into main()

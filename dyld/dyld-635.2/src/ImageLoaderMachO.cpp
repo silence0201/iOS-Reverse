@@ -574,8 +574,10 @@ ImageLoader* ImageLoaderMachO::instantiateMainExecutable(const macho_header* mh,
 	unsigned int libCount;
 	const linkedit_data_command* codeSigCmd;
 	const encryption_info_command* encryptCmd;
+	// 获取LoadCommand的相关信息,并对其进行各种校验
 	sniffLoadCommands(mh, path, false, &compressed, &segCount, &libCount, context, &codeSigCmd, &encryptCmd);
 	// instantiate concrete class based on content of load commands
+	// 根据不同的文件类型调用不同的ImageLoaderMachO
 	if ( compressed ) 
 		return ImageLoaderMachOCompressed::instantiateMainExecutable(mh, slide, path, segCount, libCount, context);
 	else
