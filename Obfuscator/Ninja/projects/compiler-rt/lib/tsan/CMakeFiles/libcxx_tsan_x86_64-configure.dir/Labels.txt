@@ -1,0 +1,10 @@
+# Target labels
+ libcxx_tsan_x86_64
+# Source files and their labels
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/CMakeFiles/libcxx_tsan_x86_64-configure
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/CMakeFiles/libcxx_tsan_x86_64-configure.rule
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-configure.rule
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-update.rule
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-patch.rule
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-download.rule
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-mkdir.rule

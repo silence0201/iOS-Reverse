@@ -1,0 +1,3281 @@
+The system is: Darwin - 17.7.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/3.15.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/3.15.2/CompilerIdCXX/a.out"
+
+Checking whether the ASM compiler is AppleClang using "--version" matched "(Apple LLVM version)":
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_426ba && [1/2] Building C object CMakeFiles/cmTC_426ba.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_426ba
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_80398 && [1/2] Building C object CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Found CUDA installation: /usr/local/cuda, version unknown
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.13.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 409.12 -v -coverage-notes-file /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0 -fdebug-compilation-dir /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fobjc-runtime=macosx-10.13.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 10.0.0 (clang-1000.11.45.5) default target x86_64-apple-darwin17.7.0
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+[2/2] Linking C executable cmTC_80398
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Found CUDA installation: /usr/local/cuda, version unknown
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_80398 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-409.12
+BUILD 17:47:51 Sep 25 2018
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em arm64e arm64_32
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/local/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local/bin/ninja cmTC_80398 && [1/2] Building C object CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Apple LLVM version 10.0.0 (clang-1000.11.45.5)]
+  ignore line: [Target: x86_64-apple-darwin17.7.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [Found CUDA installation: /usr/local/cuda, version unknown]
+  ignore line: [clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.13.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 409.12 -v -coverage-notes-file /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0 -fdebug-compilation-dir /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fobjc-runtime=macosx-10.13.0 -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 10.0.0 (clang-1000.11.45.5) default target x86_64-apple-darwin17.7.0]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /usr/include]
+  ignore line: [ /System/Library/Frameworks (framework directory)]
+  ignore line: [ /Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking C executable cmTC_80398]
+  ignore line: [Apple LLVM version 10.0.0 (clang-1000.11.45.5)]
+  ignore line: [Target: x86_64-apple-darwin17.7.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [Found CUDA installation: /usr/local/cuda, version unknown]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_80398 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_80398] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_80398.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: []
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_01477 && [1/2] Building CXX object CMakeFiles/cmTC_01477.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_01477
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1a74b && [1/2] Building CXX object CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Found CUDA installation: /usr/local/cuda, version unknown
+clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.13.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 409.12 -v -coverage-notes-file /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0 -stdlib=libc++ -fdeprecated-macro -fdebug-compilation-dir /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fobjc-runtime=macosx-10.13.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 10.0.0 (clang-1000.11.45.5) default target x86_64-apple-darwin17.7.0
+ignoring nonexistent directory "/usr/include/c++/v1"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1
+ /usr/local/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include
+ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+ /usr/include
+ /System/Library/Frameworks (framework directory)
+ /Library/Frameworks (framework directory)
+End of search list.
+[2/2] Linking CXX executable cmTC_1a74b
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Found CUDA installation: /usr/local/cuda, version unknown
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_1a74b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-409.12
+BUILD 17:47:51 Sep 25 2018
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em arm64e arm64_32
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1]
+    add: [/usr/local/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include]
+    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include]
+  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1;/usr/local/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/local/bin/ninja cmTC_1a74b && [1/2] Building CXX object CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Apple LLVM version 10.0.0 (clang-1000.11.45.5)]
+  ignore line: [Target: x86_64-apple-darwin17.7.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [Found CUDA installation: /usr/local/cuda, version unknown]
+  ignore line: [clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]]
+  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple x86_64-apple-macosx10.13.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -fno-strict-return -masm-verbose -munwind-tables -target-cpu penryn -dwarf-column-info -debugger-tuning=lldb -target-linker-version 409.12 -v -coverage-notes-file /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0 -stdlib=libc++ -fdeprecated-macro -fdebug-compilation-dir /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fobjc-runtime=macosx-10.13.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -o CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 10.0.0 (clang-1000.11.45.5) default target x86_64-apple-darwin17.7.0]
+  ignore line: [ignoring nonexistent directory "/usr/include/c++/v1"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include]
+  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+  ignore line: [ /usr/include]
+  ignore line: [ /System/Library/Frameworks (framework directory)]
+  ignore line: [ /Library/Frameworks (framework directory)]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking CXX executable cmTC_1a74b]
+  ignore line: [Apple LLVM version 10.0.0 (clang-1000.11.45.5)]
+  ignore line: [Target: x86_64-apple-darwin17.7.0]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+  ignore line: [Found CUDA installation: /usr/local/cuda, version unknown]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.13.0 -o cmTC_1a74b -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-lto_library] ==> ignore, skip following value
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.13.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_1a74b] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTC_1a74b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7f825 && [1/2] Building C object CMakeFiles/cmTC_7f825.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_7f825
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cef86 && [1/2] Building C object CMakeFiles/cmTC_cef86.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_cef86
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_5bd8b && [1/2] Building C object CMakeFiles/cmTC_5bd8b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_5bd8b
+
+
+
+Determining if the include file malloc/malloc.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_59dc1 && [1/2] Building C object CMakeFiles/cmTC_59dc1.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_59dc1
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_dbdf4 && [1/2] Building C object CMakeFiles/cmTC_dbdf4.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_dbdf4
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_62c96 && [1/2] Building C object CMakeFiles/cmTC_62c96.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_62c96
+
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8c3cc && [1/2] Building C object CMakeFiles/cmTC_8c3cc.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_8c3cc
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_4a7d6 && [1/2] Building C object CMakeFiles/cmTC_4a7d6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4a7d6
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ed10e && [1/2] Building C object CMakeFiles/cmTC_ed10e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_ed10e
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ff16a && [1/2] Building C object CMakeFiles/cmTC_ff16a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_ff16a
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_38950 && [1/2] Building C object CMakeFiles/cmTC_38950.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_38950
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_573e6 && [1/2] Building C object CMakeFiles/cmTC_573e6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_573e6
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_757c3 && [1/2] Building C object CMakeFiles/cmTC_757c3.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_757c3
+
+
+
+Determining if the include file termios.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c85d3 && [1/2] Building C object CMakeFiles/cmTC_c85d3.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_c85d3
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_756cd && [1/2] Building C object CMakeFiles/cmTC_756cd.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_756cd
+
+
+
+Determining if the include file zlib.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c2479 && [1/2] Building C object CMakeFiles/cmTC_c2479.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_c2479
+
+
+
+Determining if the include file fenv.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3cd5b && [1/2] Building C object CMakeFiles/cmTC_3cd5b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3cd5b
+
+
+
+Determining if the FE_ALL_EXCEPT exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_092eb && [1/2] Building C object CMakeFiles/cmTC_092eb.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_092eb
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_ALL_EXCEPT
+  return ((int*)(&FE_ALL_EXCEPT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FE_INEXACT exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c0b3d && [1/2] Building C object CMakeFiles/cmTC_c0b3d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_c0b3d
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fenv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FE_INEXACT
+  return ((int*)(&FE_INEXACT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file mach/mach.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_93480 && [1/2] Building C object CMakeFiles/cmTC_93480.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_93480
+
+
+
+Determining if the include file histedit.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_43f99 && [1/2] Building C object CMakeFiles/cmTC_43f99.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_43f99
+
+
+
+Performing C SOURCE FILE Test HAVE_CRASHREPORTER_INFO succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3d176 && [1/2] Building C object CMakeFiles/cmTC_3d176.dir/src.c.o
+[2/2] Linking C executable cmTC_3d176
+
+
+Source file was:
+
+     static const char *__crashreporter_info__ = 0;
+     asm(".desc ___crashreporter_info__, 0x10");
+     int main() { return 0; }
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f0b72 && [1/2] Building C object CMakeFiles/cmTC_f0b72.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f0b72
+
+
+
+Determining if the function pthread_getspecific exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_49aa6 && [1/2] Building C object CMakeFiles/cmTC_49aa6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_49aa6
+
+
+
+Determining if the function pthread_rwlock_init exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8df5f && [1/2] Building C object CMakeFiles/cmTC_8df5f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8df5f
+
+
+
+Determining if the function pthread_mutex_lock exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c0123 && [1/2] Building C object CMakeFiles/cmTC_c0123.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c0123
+
+
+
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2ba86 && [1/2] Building C object CMakeFiles/cmTC_2ba86.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2ba86
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_568f6 && [1/2] Building C object CMakeFiles/cmTC_568f6.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_568f6
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_4ca32 && [1/2] Building C object CMakeFiles/cmTC_4ca32.dir/src.c.o
+[2/2] Linking C executable cmTC_4ca32
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function compress2 exists in the z passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_fc4de && [1/2] Building C object CMakeFiles/cmTC_fc4de.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_fc4de
+
+
+
+Determining if the function el_init exists in the edit passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d2f7c && [1/2] Building C object CMakeFiles/cmTC_d2f7c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d2f7c
+
+
+
+Determining if the function setupterm exists in the curses passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_01673 && [1/2] Building C object CMakeFiles/cmTC_01673.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_01673
+
+
+
+Determining if the function xar_open exists in the xar passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cb5d9 && [1/2] Building C object CMakeFiles/cmTC_cb5d9.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_cb5d9
+
+
+
+Determining if the arc4random exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_75bee && [1/2] Building C object CMakeFiles/cmTC_75bee.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_75bee
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the backtrace exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_15d38 && [1/2] Building C object CMakeFiles/cmTC_15d38.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_15d38
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <execinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef backtrace
+  return ((int*)(&backtrace))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_764bc && [1/2] Building C object CMakeFiles/cmTC_764bc.dir/src.c.o
+[2/2] Linking C executable cmTC_764bc
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the _Unwind_Backtrace exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6badf && [1/2] Building C object CMakeFiles/cmTC_6badf.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_6badf
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unwind.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _Unwind_Backtrace
+  return ((int*)(&_Unwind_Backtrace))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getpagesize exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3934a && [1/2] Building C object CMakeFiles/cmTC_3934a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3934a
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpagesize
+  return ((int*)(&getpagesize))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the sysconf exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3b333 && [1/2] Building C object CMakeFiles/cmTC_3b333.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3b333
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysconf
+  return ((int*)(&sysconf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getrusage exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_97ab9 && [1/2] Building C object CMakeFiles/cmTC_97ab9.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_97ab9
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the setrlimit exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_202fd && [1/2] Building C object CMakeFiles/cmTC_202fd.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_202fd
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setrlimit
+  return ((int*)(&setrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the isatty exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_a2545 && [1/2] Building C object CMakeFiles/cmTC_a2545.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a2545
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isatty
+  return ((int*)(&isatty))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the futimens exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_0fdc4 && [1/2] Building C object CMakeFiles/cmTC_0fdc4.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_0fdc4
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/stat.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef futimens
+  return ((int*)(&futimens))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the futimes exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1b25a && [1/2] Building C object CMakeFiles/cmTC_1b25a.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1b25a
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef futimes
+  return ((int*)(&futimes))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the malloc_zone_statistics exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bc470 && [1/2] Building C object CMakeFiles/cmTC_bc470.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_bc470
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc/malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc_zone_statistics
+  return ((int*)(&malloc_zone_statistics))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getrlimit exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f8303 && [1/2] Building C object CMakeFiles/cmTC_f8303.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f8303
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrlimit
+  return ((int*)(&getrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the posix_spawn exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_79cba && [1/2] Building C object CMakeFiles/cmTC_79cba.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_79cba
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_spawn
+  return ((int*)(&posix_spawn))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pread exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_55a51 && [1/2] Building C object CMakeFiles/cmTC_55a51.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_55a51
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pread
+  return ((int*)(&pread))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the realpath exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6a1fe && [1/2] Building C object CMakeFiles/cmTC_6a1fe.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_6a1fe
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realpath
+  return ((int*)(&realpath))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the sbrk exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f994b && [1/2] Building C object CMakeFiles/cmTC_f994b.dir/CheckSymbolExists.c.o
+CheckSymbolExists.c:8:19: warning: 'sbrk' is deprecated [-Wdeprecated-declarations]
+  return ((int*)(&sbrk))[argc];
+                  ^
+/usr/include/unistd.h:585:1: note: 'sbrk' has been explicitly marked deprecated here
+__deprecated __WATCHOS_PROHIBITED __TVOS_PROHIBITED
+^
+/usr/include/sys/cdefs.h:176:37: note: expanded from macro '__deprecated'
+#define __deprecated    __attribute__((deprecated))
+                                       ^
+1 warning generated.
+[2/2] Linking C executable cmTC_f994b
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sbrk
+  return ((int*)(&sbrk))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f3eb6 && [1/2] Building C object CMakeFiles/cmTC_f3eb6.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f3eb6
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror_r exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bf1bd && [1/2] Building C object CMakeFiles/cmTC_bf1bd.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_bf1bd
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_r
+  return ((int*)(&strerror_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the setenv exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_5f5df && [1/2] Building C object CMakeFiles/cmTC_5f5df.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5f5df
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setenv
+  return ((int*)(&setenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the dlopen exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_fc12f && [1/2] Building C object CMakeFiles/cmTC_fc12f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_fc12f
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dlopen
+  return ((int*)(&dlopen))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the dladdr exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ee192 && [1/2] Building C object CMakeFiles/cmTC_ee192.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ee192
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dladdr
+  return ((int*)(&dladdr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c8bdd && [1/2] Building C object CMakeFiles/cmTC_c8bdd.dir/src.c.o
+[2/2] Linking C executable cmTC_c8bdd
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+  return 0;
+}
+
+Determining if the pthread_getname_np exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ccd1d && [1/2] Building C object CMakeFiles/cmTC_ccd1d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_ccd1d
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_getname_np
+  return ((int*)(&pthread_getname_np))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_setname_np exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_61029 && [1/2] Building C object CMakeFiles/cmTC_61029.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_61029
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_setname_np
+  return ((int*)(&pthread_setname_np))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS_WITHOUT_LIB succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bb2e8 && [1/2] Building CXX object CMakeFiles/cmTC_bb2e8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_bb2e8
+
+
+Source file was:
+
+#include <atomic>
+std::atomic<int> x;
+int main() {
+  return x;
+}
+
+Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS64_WITHOUT_LIB succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1c9f1 && [1/2] Building CXX object CMakeFiles/cmTC_1c9f1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1c9f1
+
+
+Source file was:
+
+#include <atomic>
+#include <cstdint>
+std::atomic<uint64_t> x (0);
+int main() {
+  uint64_t i = x.load(std::memory_order_relaxed);
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test LLVM_HAS_ATOMICS succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_90d6c && [1/2] Building CXX object CMakeFiles/cmTC_90d6c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_90d6c
+
+
+Source file was:
+
+#ifdef _MSC_VER
+#include <windows.h>
+#endif
+int main() {
+#ifdef _MSC_VER
+        volatile LONG val = 1;
+        MemoryBarrier();
+        InterlockedCompareExchange(&val, 0, 1);
+        InterlockedIncrement(&val);
+        InterlockedDecrement(&val);
+#else
+        volatile unsigned long val = 1;
+        __sync_synchronize();
+        __sync_val_compare_and_swap(&val, 1, 0);
+        __sync_add_and_fetch(&val, 1);
+        __sync_sub_and_fetch(&val, 1);
+#endif
+        return 0;
+      }
+
+Performing C++ SOURCE FILE Test SUPPORTS_VARIADIC_MACROS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d5ab6 && [1/2] Building CXX object CMakeFiles/cmTC_d5ab6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d5ab6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_79e37 && [1/2] Building CXX object CMakeFiles/cmTC_79e37.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_79e37
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1ce52 && [1/2] Building C object CMakeFiles/cmTC_1ce52.dir/src.c.o
+[2/2] Linking C executable cmTC_1ce52
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FPIC succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7df6f && [1/2] Building CXX object CMakeFiles/cmTC_7df6f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7df6f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_24dc5 && [1/2] Building CXX object CMakeFiles/cmTC_24dc5.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_24dc5
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_WERROR_DATE_TIME succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_51dec && [1/2] Building C object CMakeFiles/cmTC_51dec.dir/src.c.o
+[2/2] Linking C executable cmTC_51dec
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_DATE_TIME succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_11afe && [1/2] Building CXX object CMakeFiles/cmTC_11afe.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_11afe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3c713 && [1/2] Building CXX object CMakeFiles/cmTC_3c713.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3c713
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e35a6 && [1/2] Building CXX object CMakeFiles/cmTC_e35a6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e35a6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f257f && [1/2] Building CXX object CMakeFiles/cmTC_f257f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_f257f
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_a1fbe && [1/2] Building C object CMakeFiles/cmTC_a1fbe.dir/src.c.o
+[2/2] Linking C executable cmTC_a1fbe
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_66a84 && [1/2] Building CXX object CMakeFiles/cmTC_66a84.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_66a84
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7923c && [1/2] Building C object CMakeFiles/cmTC_7923c.dir/src.c.o
+[2/2] Linking C executable cmTC_7923c
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_05038 && [1/2] Building CXX object CMakeFiles/cmTC_05038.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_05038
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d9dff && [1/2] Building CXX object CMakeFiles/cmTC_d9dff.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d9dff
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_affb1 && [1/2] Building CXX object CMakeFiles/cmTC_affb1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_affb1
+
+
+Source file was:
+class base {public: virtual void anchor();protected: ~base();};
+                               class derived final : public base { public: ~derived();};
+                               int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1419a && [1/2] Building C object CMakeFiles/cmTC_1419a.dir/src.c.o
+[2/2] Linking C executable cmTC_1419a
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_55cc6 && [1/2] Building CXX object CMakeFiles/cmTC_55cc6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_55cc6
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_WCOMMENT_ALLOWS_LINE_WRAP succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_04b5f && [1/2] Building C object CMakeFiles/cmTC_04b5f.dir/src.c.o
+[2/2] Linking C executable cmTC_04b5f
+
+
+Source file was:
+// \
+//
+int main() {return 0;}
+Performing C SOURCE FILE Test C_SUPPORTS_STRING_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bda57 && [1/2] Building C object CMakeFiles/cmTC_bda57.dir/src.c.o
+[2/2] Linking C executable cmTC_bda57
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_STRING_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c3832 && [1/2] Building CXX object CMakeFiles/cmTC_c3832.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c3832
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function fopen exists in the c passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e0c43 && [1/2] Building C object CMakeFiles/cmTC_e0c43.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_e0c43
+
+
+
+Performing C SOURCE FILE Test LIBUNWIND_HAS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ed256 && [1/2] Building C object CMakeFiles/cmTC_ed256.dir/src.c.o
+[2/2] Linking C executable cmTC_ed256
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBUNWIND_HAS_FUNWIND_TABLES succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_58f98 && [1/2] Building C object CMakeFiles/cmTC_58f98.dir/src.c.o
+[2/2] Linking C executable cmTC_58f98
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_NO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_9928f && [1/2] Building CXX object CMakeFiles/cmTC_9928f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9928f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_NO_RTTI_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2d644 && [1/2] Building CXX object CMakeFiles/cmTC_2d644.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_2d644
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_FSTRICT_ALIASING_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2d4bd && [1/2] Building CXX object CMakeFiles/cmTC_2d4bd.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_2d4bd
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_NOSTDINCXX_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7d301 && [1/2] Building CXX object CMakeFiles/cmTC_7d301.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7d301
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WALL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_453c2 && [1/2] Building CXX object CMakeFiles/cmTC_453c2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_453c2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_W_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cb09b && [1/2] Building CXX object CMakeFiles/cmTC_cb09b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_cb09b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WNO_UNUSED_FUNCTION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_69f8b && [1/2] Building CXX object CMakeFiles/cmTC_69f8b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_69f8b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WUNUSED_VARIABLE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_dea00 && [1/2] Building CXX object CMakeFiles/cmTC_dea00.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_dea00
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WUNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b9e65 && [1/2] Building CXX object CMakeFiles/cmTC_b9e65.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b9e65
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WSTRICT_ALIASING_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d1947 && [1/2] Building CXX object CMakeFiles/cmTC_d1947.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d1947
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WSTRICT_OVERFLOW_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_08a31 && [1/2] Building CXX object CMakeFiles/cmTC_08a31.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_08a31
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WWRITE_STRINGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_95a09 && [1/2] Building CXX object CMakeFiles/cmTC_95a09.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_95a09
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WCHAR_SUBSCRIPTS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8b52c && [1/2] Building CXX object CMakeFiles/cmTC_8b52c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8b52c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WMISMATCHED_TAGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_01ecf && [1/2] Building CXX object CMakeFiles/cmTC_01ecf.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_01ecf
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WMISSING_BRACES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_309b1 && [1/2] Building CXX object CMakeFiles/cmTC_309b1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_309b1
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WSHORTEN_64_TO_32_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_538c0 && [1/2] Building CXX object CMakeFiles/cmTC_538c0.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_538c0
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WSIGN_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_4c3a0 && [1/2] Building CXX object CMakeFiles/cmTC_4c3a0.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_4c3a0
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WSIGN_COMPARE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_08d87 && [1/2] Building CXX object CMakeFiles/cmTC_08d87.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_08d87
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WSHADOW_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d8ceb && [1/2] Building CXX object CMakeFiles/cmTC_d8ceb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d8ceb
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WCONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bafc6 && [1/2] Building CXX object CMakeFiles/cmTC_bafc6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_bafc6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WNEWLINE_EOF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b0c98 && [1/2] Building CXX object CMakeFiles/cmTC_b0c98.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b0c98
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WUNDEF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7c49c && [1/2] Building CXX object CMakeFiles/cmTC_7c49c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7c49c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_PEDANTIC_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cd464 && [1/2] Building CXX object CMakeFiles/cmTC_cd464.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_cd464
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2796c && [1/2] Building CXX object CMakeFiles/cmTC_2796c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_2796c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_WNO_ERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e8f76 && [1/2] Building CXX object CMakeFiles/cmTC_e8f76.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e8f76
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBUNWIND_HAS_STD_CXX11 succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bf4ba && [1/2] Building CXX object CMakeFiles/cmTC_bf4ba.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_bf4ba
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function dladdr exists in the dl passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_978f0 && [1/2] Building C object CMakeFiles/cmTC_978f0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_978f0
+
+
+
+Determining if the function pthread_once exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_878c6 && [1/2] Building C object CMakeFiles/cmTC_878c6.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_878c6
+
+
+
+Determining if the function fopen exists in the c passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f9df2 && [1/2] Building C object CMakeFiles/cmTC_f9df2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f9df2
+
+
+
+Performing C SOURCE FILE Test LIBCXXABI_HAS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3596d && [1/2] Building C object CMakeFiles/cmTC_3596d.dir/src.c.o
+[2/2] Linking C executable cmTC_3596d
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBCXXABI_HAS_FUNWIND_TABLES succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_91d46 && [1/2] Building C object CMakeFiles/cmTC_91d46.dir/src.c.o
+[2/2] Linking C executable cmTC_91d46
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_81391 && [1/2] Building CXX object CMakeFiles/cmTC_81391.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_81391
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NO_RTTI_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_0ab00 && [1/2] Building CXX object CMakeFiles/cmTC_0ab00.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_0ab00
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_FSTRICT_ALIASING_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c7eb8 && [1/2] Building CXX object CMakeFiles/cmTC_c7eb8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c7eb8
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NOSTDINCXX_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_13acc && [1/2] Building CXX object CMakeFiles/cmTC_13acc.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_13acc
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WALL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_af625 && [1/2] Building CXX object CMakeFiles/cmTC_af625.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_af625
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_W_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b8bb6 && [1/2] Building CXX object CMakeFiles/cmTC_b8bb6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b8bb6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WUNUSED_FUNCTION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_254d2 && [1/2] Building CXX object CMakeFiles/cmTC_254d2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_254d2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WUNUSED_VARIABLE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bfe8a && [1/2] Building CXX object CMakeFiles/cmTC_bfe8a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_bfe8a
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WUNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cb879 && [1/2] Building CXX object CMakeFiles/cmTC_cb879.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_cb879
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WSTRICT_ALIASING_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c4d9e && [1/2] Building CXX object CMakeFiles/cmTC_c4d9e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c4d9e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WSTRICT_OVERFLOW_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ed80b && [1/2] Building CXX object CMakeFiles/cmTC_ed80b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_ed80b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WWRITE_STRINGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e1e6f && [1/2] Building CXX object CMakeFiles/cmTC_e1e6f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e1e6f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WCHAR_SUBSCRIPTS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_16b45 && [1/2] Building CXX object CMakeFiles/cmTC_16b45.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_16b45
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WMISMATCHED_TAGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_70dd3 && [1/2] Building CXX object CMakeFiles/cmTC_70dd3.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_70dd3
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WMISSING_BRACES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_90c28 && [1/2] Building CXX object CMakeFiles/cmTC_90c28.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_90c28
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WSHORTEN_64_TO_32_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8eaff && [1/2] Building CXX object CMakeFiles/cmTC_8eaff.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8eaff
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WSIGN_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6dbce && [1/2] Building CXX object CMakeFiles/cmTC_6dbce.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6dbce
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WSIGN_COMPARE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_63652 && [1/2] Building CXX object CMakeFiles/cmTC_63652.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_63652
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WSHADOW_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7e10d && [1/2] Building CXX object CMakeFiles/cmTC_7e10d.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7e10d
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WCONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_5a693 && [1/2] Building CXX object CMakeFiles/cmTC_5a693.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_5a693
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WNEWLINE_EOF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_43e42 && [1/2] Building CXX object CMakeFiles/cmTC_43e42.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_43e42
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WUNDEF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c2be2 && [1/2] Building CXX object CMakeFiles/cmTC_c2be2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c2be2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_PEDANTIC_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_22479 && [1/2] Building CXX object CMakeFiles/cmTC_22479.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_22479
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_0e270 && [1/2] Building CXX object CMakeFiles/cmTC_0e270.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_0e270
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WNO_ERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_97723 && [1/2] Building CXX object CMakeFiles/cmTC_97723.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_97723
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function dladdr exists in the dl passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1ab58 && [1/2] Building C object CMakeFiles/cmTC_1ab58.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1ab58
+
+
+
+Determining if the function pthread_once exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ceb66 && [1/2] Building C object CMakeFiles/cmTC_ceb66.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ceb66
+
+
+
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WERROR_EQ_RETURN_TYPE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2a9b4 && [1/2] Building CXX object CMakeFiles/cmTC_2a9b4.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_2a9b4
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_W_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_92dca && [1/2] Building CXX object CMakeFiles/cmTC_92dca.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_92dca
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WALL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6282c && [1/2] Building CXX object CMakeFiles/cmTC_6282c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6282c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WCHAR_SUBSCRIPTS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8d54b && [1/2] Building CXX object CMakeFiles/cmTC_8d54b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8d54b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WCONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_07222 && [1/2] Building CXX object CMakeFiles/cmTC_07222.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_07222
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WMISMATCHED_TAGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_00b0f && [1/2] Building CXX object CMakeFiles/cmTC_00b0f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_00b0f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WMISSING_BRACES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_13398 && [1/2] Building CXX object CMakeFiles/cmTC_13398.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_13398
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WNEWLINE_EOF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_43f70 && [1/2] Building CXX object CMakeFiles/cmTC_43f70.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_43f70
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WUNUSED_FUNCTION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_66302 && [1/2] Building CXX object CMakeFiles/cmTC_66302.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_66302
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WSHADOW_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_a6edb && [1/2] Building CXX object CMakeFiles/cmTC_a6edb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a6edb
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WSHORTEN_64_TO_32_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3d9da && [1/2] Building CXX object CMakeFiles/cmTC_3d9da.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3d9da
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WSIGN_COMPARE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_95979 && [1/2] Building CXX object CMakeFiles/cmTC_95979.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_95979
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WSIGN_CONVERSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_21444 && [1/2] Building CXX object CMakeFiles/cmTC_21444.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_21444
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WSTRICT_ALIASING_EQ_2_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d9b0f && [1/2] Building CXX object CMakeFiles/cmTC_d9b0f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d9b0f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WSTRICT_OVERFLOW_EQ_4_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_817ee && [1/2] Building CXX object CMakeFiles/cmTC_817ee.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_817ee
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WUNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_67762 && [1/2] Building CXX object CMakeFiles/cmTC_67762.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_67762
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WUNUSED_VARIABLE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c5c63 && [1/2] Building CXX object CMakeFiles/cmTC_c5c63.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c5c63
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WWRITE_STRINGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2167b && [1/2] Building CXX object CMakeFiles/cmTC_2167b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_2167b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WUNDEF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d8020 && [1/2] Building CXX object CMakeFiles/cmTC_d8020.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d8020
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WNO_ERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_31441 && [1/2] Building CXX object CMakeFiles/cmTC_31441.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_31441
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_PEDANTIC_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_063b7 && [1/2] Building CXX object CMakeFiles/cmTC_063b7.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_063b7
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_FSTRICT_ALIASING_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_fbdc3 && [1/2] Building CXX object CMakeFiles/cmTC_fbdc3.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_fbdc3
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test LIBCXXABI_SUPPORTS_FUNWIND_TABLES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cace2 && [1/2] Building C object CMakeFiles/cmTC_cace2.dir/src.c.o
+[2/2] Linking C executable cmTC_cace2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_25d05 && [1/2] Building CXX object CMakeFiles/cmTC_25d05.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_25d05
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function fopen exists in the c passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_50fe1 && [1/2] Building C object CMakeFiles/cmTC_50fe1.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_50fe1
+
+
+
+Performing C SOURCE FILE Test LIBCXX_SUPPORTS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_866ec && [1/2] Building C object CMakeFiles/cmTC_866ec.dir/src.c.o
+[2/2] Linking C executable cmTC_866ec
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAVE_CXX_ATOMICS_WITHOUT_LIB succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1008b && [1/2] Building CXX object CMakeFiles/cmTC_1008b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1008b
+clang: warning: argument unused during compilation: '-nostdinc++' [-Wunused-command-line-argument]
+
+
+Source file was:
+
+#include <cstdint>
+#include <atomic>
+std::atomic<uintptr_t> x;
+std::atomic<uintmax_t> y;
+int main() {
+  return x + y;
+}
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_659b0 && [1/2] Building C object CMakeFiles/cmTC_659b0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_659b0
+
+
+
+Determining if the function ccos exists in the m passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f02a0 && [1/2] Building C object CMakeFiles/cmTC_f02a0.dir/CheckFunctionExists.c.o
+/usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'ccos' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS ccos
+                              ^
+/usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'ccos' is a builtin with type '_Complex double (_Complex double)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS ccos
+                              ^
+1 warning generated.
+[2/2] Linking C executable cmTC_f02a0
+
+
+
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_STD_EQ_CXX11_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e2ca6 && [1/2] Building CXX object CMakeFiles/cmTC_e2ca6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e2ca6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_NOSTDINCXX_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3d83f && [1/2] Building CXX object CMakeFiles/cmTC_3d83f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3d83f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_4ebe3 && [1/2] Building CXX object CMakeFiles/cmTC_4ebe3.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_4ebe3
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WALL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bf311 && [1/2] Building CXX object CMakeFiles/cmTC_bf311.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_bf311
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WEXTRA_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e7ff6 && [1/2] Building CXX object CMakeFiles/cmTC_e7ff6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e7ff6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_W_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_4ed32 && [1/2] Building CXX object CMakeFiles/cmTC_4ed32.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_4ed32
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WWRITE_STRINGS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_9706a && [1/2] Building CXX object CMakeFiles/cmTC_9706a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9706a
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_UNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_95b76 && [1/2] Building CXX object CMakeFiles/cmTC_95b76.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_95b76
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_LONG_LONG_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3f393 && [1/2] Building CXX object CMakeFiles/cmTC_3f393.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3f393
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WERROR_EQ_RETURN_TYPE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3346c && [1/2] Building CXX object CMakeFiles/cmTC_3346c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3346c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WEXTRA_SEMI_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_83887 && [1/2] Building CXX object CMakeFiles/cmTC_83887.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_83887
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_USER_DEFINED_LITERALS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_77124 && [1/2] Building CXX object CMakeFiles/cmTC_77124.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_77124
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b44f5 && [1/2] Building CXX object CMakeFiles/cmTC_b44f5.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b44f5
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_ERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f21e1 && [1/2] Building CXX object CMakeFiles/cmTC_f21e1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_f21e1
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_FPIC_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1daaf && [1/2] Building CXX object CMakeFiles/cmTC_1daaf.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1daaf
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_STD_EQ_CXX14_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3f055 && [1/2] Building CXX object CMakeFiles/cmTC_3f055.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3f055
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_STD_EQ_CXX17_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_82751 && [1/2] Building CXX object CMakeFiles/cmTC_82751.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_82751
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file unwind.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_57837 && [1/2] Building C object CMakeFiles/cmTC_57837.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_57837
+
+
+
+Determining if the function fopen exists in the c passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7ef32 && [1/2] Building C object CMakeFiles/cmTC_7ef32.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_7ef32
+
+
+
+Performing C SOURCE FILE Test COMPILER_RT_HAS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b6c85 && [1/2] Building C object CMakeFiles/cmTC_b6c85.dir/src.c.o
+[2/2] Linking C executable cmTC_b6c85
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test COMPILER_RT_HAS_FFREESTANDING_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_35f9f && [1/2] Building C object CMakeFiles/cmTC_35f9f.dir/src.c.o
+[2/2] Linking C executable cmTC_35f9f
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FPIC_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_80a2c && [1/2] Building CXX object CMakeFiles/cmTC_80a2c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_80a2c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FPIE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_19a1e && [1/2] Building CXX object CMakeFiles/cmTC_19a1e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_19a1e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_BUILTIN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cebf7 && [1/2] Building CXX object CMakeFiles/cmTC_cebf7.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_cebf7
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f5a27 && [1/2] Building CXX object CMakeFiles/cmTC_f5a27.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_f5a27
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FOMIT_FRAME_POINTER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e7056 && [1/2] Building CXX object CMakeFiles/cmTC_e7056.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e7056
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FUNWIND_TABLES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1b3e2 && [1/2] Building CXX object CMakeFiles/cmTC_1b3e2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1b3e2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_STACK_PROTECTOR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_4cc69 && [1/2] Building CXX object CMakeFiles/cmTC_4cc69.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_4cc69
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_SANITIZE_SAFE_STACK_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3c8cc && [1/2] Building CXX object CMakeFiles/cmTC_3c8cc.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3c8cc
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FVISIBILITY_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d6d7f && [1/2] Building CXX object CMakeFiles/cmTC_d6d7f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d6d7f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FRTTI_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c9321 && [1/2] Building CXX object CMakeFiles/cmTC_c9321.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c9321
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_RTTI_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_54b3f && [1/2] Building CXX object CMakeFiles/cmTC_54b3f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_54b3f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_FUNCTION_SECTIONS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1c602 && [1/2] Building CXX object CMakeFiles/cmTC_1c602.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1c602
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_STD_CXX11_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_12e6a && [1/2] Building CXX object CMakeFiles/cmTC_12e6a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_12e6a
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FTLS_MODEL_INITIAL_EXEC succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_73b64 && [1/2] Building CXX object CMakeFiles/cmTC_73b64.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_73b64
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_LTO_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d59cf && [1/2] Building CXX object CMakeFiles/cmTC_d59cf.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d59cf
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MSSE3_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_45f9e && [1/2] Building CXX object CMakeFiles/cmTC_45f9e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_45f9e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MSSE4_2_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_226c8 && [1/2] Building CXX object CMakeFiles/cmTC_226c8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_226c8
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_SYSROOT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_0b711 && [1/2] Building CXX object CMakeFiles/cmTC_0b711.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_0b711
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_07ba7 && [1/2] Building CXX object CMakeFiles/cmTC_07ba7.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_07ba7
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_GLINE_TABLES_ONLY_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_80958 && [1/2] Building CXX object CMakeFiles/cmTC_80958.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_80958
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_G_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1f69b && [1/2] Building CXX object CMakeFiles/cmTC_1f69b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1f69b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WALL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1f383 && [1/2] Building CXX object CMakeFiles/cmTC_1f383.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1f383
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_691c6 && [1/2] Building CXX object CMakeFiles/cmTC_691c6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_691c6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WFRAME_LARGER_THAN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_84085 && [1/2] Building CXX object CMakeFiles/cmTC_84085.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_84085
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WGLOBAL_CONSTRUCTORS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e1561 && [1/2] Building CXX object CMakeFiles/cmTC_e1561.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e1561
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WC99_EXTENSIONS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8af79 && [1/2] Building CXX object CMakeFiles/cmTC_8af79.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8af79
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WGNU_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ca191 && [1/2] Building CXX object CMakeFiles/cmTC_ca191.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_ca191
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WNON_VIRTUAL_DTOR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d9cd6 && [1/2] Building CXX object CMakeFiles/cmTC_d9cd6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d9cd6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WVARIADIC_MACROS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_5e18e && [1/2] Building CXX object CMakeFiles/cmTC_5e18e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_5e18e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WUNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b4d0a && [1/2] Building CXX object CMakeFiles/cmTC_b4d0a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b4d0a
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WCOVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1948b && [1/2] Building CXX object CMakeFiles/cmTC_1948b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1948b
+
+
+Source file was:
+int main() { return 0; }
+Determining if the __func__ exist passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2ff53 && [1/2] Building C object CMakeFiles/cmTC_2ff53.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_2ff53
+
+
+File /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __func__
+  return ((int*)(&__func__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_da86a && [1/2] Building C object CMakeFiles/cmTC_da86a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_da86a
+
+
+
+Determining if the function pow exists in the m passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3a016 && [1/2] Building C object CMakeFiles/cmTC_3a016.dir/CheckFunctionExists.c.o
+/usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'pow' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS pow
+                              ^
+/usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'pow' is a builtin with type 'double (double, double)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS pow
+                              ^
+1 warning generated.
+[2/2] Linking C executable cmTC_3a016
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_dda3c && [1/2] Building C object CMakeFiles/cmTC_dda3c.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_dda3c
+
+
+
+Determining if the function setupterm exists in the curses passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c3f6d && [1/2] Building C object CMakeFiles/cmTC_c3f6d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c3f6d
+
+
+
+Determining if the function __cxa_throw exists in the c++ passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6901e && [1/2] Building C object CMakeFiles/cmTC_6901e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_6901e
+
+
+
+Determining if the function __cxa_throw exists in the stdc++ passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_56aef && [1/2] Building C object CMakeFiles/cmTC_56aef.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_56aef
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_APP_EXTENSION succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_92ba2 && [1/2] Building CXX object CMakeFiles/cmTC_92ba2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_92ba2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_ATOMICS succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_84efa && [1/2] Building CXX object CMakeFiles/cmTC_84efa.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_84efa
+
+
+Source file was:
+
+#ifdef _MSC_VER
+#include <Intrin.h> /* Workaround for PR19898. */
+#include <windows.h>
+#endif
+int main() {
+#ifdef _MSC_VER
+        volatile LONG val = 1;
+        MemoryBarrier();
+        InterlockedCompareExchange(&val, 0, 1);
+        InterlockedIncrement(&val);
+        InterlockedDecrement(&val);
+#else
+        volatile unsigned long val = 1;
+        __sync_synchronize();
+        __sync_val_compare_and_swap(&val, 1, 0);
+        __sync_add_and_fetch(&val, 1);
+        __sync_sub_and_fetch(&val, 1);
+#endif
+        return 0;
+      }
+
+Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_FCNTL_LCK succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8ddf9 && [1/2] Building CXX object CMakeFiles/cmTC_8ddf9.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8ddf9
+
+
+Source file was:
+
+#if defined(__linux__)
+#include <unistd.h>
+#endif
+#include <fcntl.h>
+int fd;
+int main() {
+ struct flock s_flock;
+
+ s_flock.l_type = F_WRLCK;
+ fcntl(fd, F_SETLKW, &s_flock);
+ return 0;
+}
+
+
+Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_UNAME succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3dfb9 && [1/2] Building CXX object CMakeFiles/cmTC_3dfb9.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3dfb9
+
+
+Source file was:
+
+#include <sys/utsname.h>
+int main() {
+ return 0;
+}
+
+
+Performing C++ SOURCE FILE Test HAS_THREAD_LOCAL succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ce9a5 && [1/2] Building CXX object CMakeFiles/cmTC_ce9a5.dir/src.cxx.o
+src.cxx:2:27: warning: unused variable 'blah' [-Wunused-variable]
+  static thread_local int blah;
+                          ^
+1 warning generated.
+[2/2] Linking CXX executable cmTC_ce9a5
+
+
+Source file was:
+
+  static thread_local int blah;
+  int main() {
+  return 0;
+  }
+  
+Performing C SOURCE FILE Test OPENMP_HAVE_WERROR_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_bd2b8 && [1/2] Building C object CMakeFiles/cmTC_bd2b8.dir/src.c.o
+[2/2] Linking C executable cmTC_bd2b8
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test OPENMP_HAVE_STD_GNUPP11_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_81809 && [1/2] Building CXX object CMakeFiles/cmTC_81809.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_81809
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test OPENMP_HAVE_STD_CPP11_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_0e716 && [1/2] Building CXX object CMakeFiles/cmTC_0e716.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_0e716
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_46d2f && [1/2] Building CXX object CMakeFiles/cmTC_46d2f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_46d2f
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBOMP_HAVE_FNO_RTTI_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d5349 && [1/2] Building CXX object CMakeFiles/cmTC_d5349.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d5349
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_X_CPP_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7c6d7 && [1/2] Building C object CMakeFiles/cmTC_7c6d7.dir/src.c.o
+[2/2] Linking C executable cmTC_7c6d7
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test LIBOMP_HAVE_WCAST_QUAL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_27931 && [1/2] Building CXX object CMakeFiles/cmTC_27931.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_27931
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_49055 && [1/2] Building C object CMakeFiles/cmTC_49055.dir/src.c.o
+[2/2] Linking C executable cmTC_49055
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_LOCAL_TYPEDEF_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2dd8b && [1/2] Building C object CMakeFiles/cmTC_2dd8b.dir/src.c.o
+[2/2] Linking C executable cmTC_2dd8b
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_e31b0 && [1/2] Building C object CMakeFiles/cmTC_e31b0.dir/src.c.o
+[2/2] Linking C executable cmTC_e31b0
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b8223 && [1/2] Building C object CMakeFiles/cmTC_b8223.dir/src.c.o
+[2/2] Linking C executable cmTC_b8223
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_SWITCH_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8fc87 && [1/2] Building C object CMakeFiles/cmTC_8fc87.dir/src.c.o
+[2/2] Linking C executable cmTC_8fc87
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_45b27 && [1/2] Building C object CMakeFiles/cmTC_45b27.dir/src.c.o
+[2/2] Linking C executable cmTC_45b27
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_DEPRECATED_REGISTER_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8593c && [1/2] Building C object CMakeFiles/cmTC_8593c.dir/src.c.o
+[2/2] Linking C executable cmTC_8593c
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_2f1a6 && [1/2] Building C object CMakeFiles/cmTC_2f1a6.dir/src.c.o
+[2/2] Linking C executable cmTC_2f1a6
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_GNU_ANONYMOUS_STRUCT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_72383 && [1/2] Building C object CMakeFiles/cmTC_72383.dir/src.c.o
+[2/2] Linking C executable cmTC_72383
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8b62b && [1/2] Building C object CMakeFiles/cmTC_8b62b.dir/src.c.o
+[2/2] Linking C executable cmTC_8b62b
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_f79b9 && [1/2] Building C object CMakeFiles/cmTC_f79b9.dir/src.c.o
+[2/2] Linking C executable cmTC_f79b9
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_MISSING_BRACES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_61702 && [1/2] Building C object CMakeFiles/cmTC_61702.dir/src.c.o
+[2/2] Linking C executable cmTC_61702
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_COMMENT_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_8acb3 && [1/2] Building C object CMakeFiles/cmTC_8acb3.dir/src.c.o
+[2/2] Linking C executable cmTC_8acb3
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_SELF_ASSIGN_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7b7e7 && [1/2] Building C object CMakeFiles/cmTC_7b7e7.dir/src.c.o
+[2/2] Linking C executable cmTC_7b7e7
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_VLA_EXTENSION_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_7466e && [1/2] Building C object CMakeFiles/cmTC_7466e.dir/src.c.o
+[2/2] Linking C executable cmTC_7466e
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_WNO_FORMAT_PEDANTIC_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6fe33 && [1/2] Building C object CMakeFiles/cmTC_6fe33.dir/src.c.o
+[2/2] Linking C executable cmTC_6fe33
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_MSSE2_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_0c5e3 && [1/2] Building C object CMakeFiles/cmTC_0c5e3.dir/src.c.o
+[2/2] Linking C executable cmTC_0c5e3
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_FTLS_MODEL_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cbf79 && [1/2] Building C object CMakeFiles/cmTC_cbf79.dir/src.c.o
+[2/2] Linking C executable cmTC_cbf79
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE_M32_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_759cb && [1/2] Building C object CMakeFiles/cmTC_759cb.dir/src.c.o
+[2/2] Linking C executable cmTC_759cb
+ld: warning: The i386 architecture is deprecated for macOS (remove from the Xcode build setting: ARCHS)
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3b345 && [1/2] Building C object CMakeFiles/cmTC_3b345.dir/src.c.o
+src.c:2:9: warning: unused variable 'p' [-Wunused-variable]
+  void* p = __builtin_frame_address(0);
+        ^
+1 warning generated.
+[2/2] Linking C executable cmTC_3b345
+
+
+Source file was:
+int main(int argc, char** argv) {
+  void* p = __builtin_frame_address(0);
+  return 0;}
+Performing C SOURCE FILE Test LIBOMP_HAVE_WEAK_ATTRIBUTE succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c9dc5 && [1/2] Building C object CMakeFiles/cmTC_c9dc5.dir/src.c.o
+[2/2] Linking C executable cmTC_c9dc5
+
+
+Source file was:
+__attribute__ ((weak)) int foo(int a) { return a*a; }
+  int main(int argc, char** argv) {
+  return foo(argc);}
+Determining if the function sqrt exists in the m passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ef821 && [1/2] Building C object CMakeFiles/cmTC_ef821.dir/CheckFunctionExists.c.o
+/usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'sqrt' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS sqrt
+                              ^
+/usr/local/Cellar/cmake/3.15.2/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'sqrt' is a builtin with type 'double (double)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS sqrt
+                              ^
+1 warning generated.
+[2/2] Linking C executable cmTC_ef821
+
+
+
+Determining if the function __atomic_load_1 exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d1619 && [1/2] Building C object CMakeFiles/cmTC_d1619.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d1619
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d0e52 && [1/2] Building C object CMakeFiles/cmTC_d0e52.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d0e52
+
+
+
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_83646 && [1/2] Building CXX object CMakeFiles/cmTC_83646.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_83646
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_STD_CXX11 succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_d91eb && [1/2] Building CXX object CMakeFiles/cmTC_d91eb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d91eb
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WALL succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_1ceec && [1/2] Building CXX object CMakeFiles/cmTC_1ceec.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1ceec
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WEXTRA succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_ce252 && [1/2] Building CXX object CMakeFiles/cmTC_ce252.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_ce252
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHADOW succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_3ee99 && [1/2] Building CXX object CMakeFiles/cmTC_3ee99.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3ee99
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_32122 && [1/2] Building CXX object CMakeFiles/cmTC_32122.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_32122
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC_ERRORS succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_eed7b && [1/2] Building CXX object CMakeFiles/cmTC_eed7b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_eed7b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_cc42c && [1/2] Building CXX object CMakeFiles/cmTC_cc42c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_cc42c
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WFLOAT_EQUAL succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_53174 && [1/2] Building CXX object CMakeFiles/cmTC_53174.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_53174
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FSTRICT_ALIASING succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_28ba6 && [1/2] Building CXX object CMakeFiles/cmTC_28ba6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_28ba6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FNO_EXCEPTIONS succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_df643 && [1/2] Building CXX object CMakeFiles/cmTC_df643.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_df643
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSTRICT_ALIASING succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_c68d6 && [1/2] Building CXX object CMakeFiles/cmTC_c68d6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c68d6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WTHREAD_SAFETY succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_6f667 && [1/2] Building CXX object CMakeFiles/cmTC_6f667.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6f667
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_COVERAGE succeeded with the following output:
+Change Dir: /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/ninja cmTC_b489b && [1/2] Building CXX object CMakeFiles/cmTC_b489b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b489b
+
+
+Source file was:
+int main() { return 0; }

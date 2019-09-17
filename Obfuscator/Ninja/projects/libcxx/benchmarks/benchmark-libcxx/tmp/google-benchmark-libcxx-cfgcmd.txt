@@ -1,0 +1,1 @@
+cmd='/usr/local/Cellar/cmake/3.15.2/bin/cmake;-GNinja;-C<TMP_DIR>/google-benchmark-libcxx-cache-$<CONFIG>.cmake;<SOURCE_DIR><SOURCE_SUBDIR>'

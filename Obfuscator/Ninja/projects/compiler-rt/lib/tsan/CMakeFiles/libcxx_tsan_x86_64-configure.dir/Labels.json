@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/CMakeFiles/libcxx_tsan_x86_64-configure"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/CMakeFiles/libcxx_tsan_x86_64-configure.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-configure.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-update.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-patch.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-download.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Build/projects/compiler-rt/lib/tsan/libcxx_tsan_x86_64-stamps/libcxx_tsan_x86_64-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libcxx_tsan_x86_64"
+		],
+		"name" : "libcxx_tsan_x86_64-configure"
+	}
+}
