@@ -1,0 +1,12 @@
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/AntiClassDump.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/BogusControlFlow.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/CryptoUtils.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/Flattening.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/FunctionCallObfuscate.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/FunctionWrapper.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/IndirectBranch.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/Obfuscation.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/SplitBasicBlocks.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/StringEncryption.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/Substitution.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Transforms/Obfuscation/LLVM.build/Debug/LLVMObfuscation.build/Objects-normal/x86_64/Utils.o

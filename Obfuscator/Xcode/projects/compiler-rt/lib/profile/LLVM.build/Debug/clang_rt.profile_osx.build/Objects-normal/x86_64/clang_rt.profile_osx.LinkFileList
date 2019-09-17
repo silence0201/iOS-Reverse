@@ -1,0 +1,15 @@
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/GCDAProfiling.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfiling.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingBuffer.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingFile.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingMerge.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingMergeFile.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingNameVar.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingPlatformDarwin.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingPlatformFuchsia.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingPlatformLinux.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingPlatformOther.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingRuntime.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingUtil.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingValue.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/lib/profile/LLVM.build/Debug/clang_rt.profile_osx.build/Objects-normal/x86_64/InstrProfilingWriter.o

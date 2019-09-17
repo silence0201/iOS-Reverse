@@ -1,0 +1,14 @@
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/BlockIndexer.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/BlockPrinter.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/BlockVerifier.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/FDRRecordProducer.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/FDRRecords.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/FDRTraceExpander.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/FDRTraceWriter.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/FileHeaderReader.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/InstrumentationMap.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/LogBuilderConsumer.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/Profile.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/RecordInitializer.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/RecordPrinter.o
+/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/XRay/LLVM.build/Debug/LLVMXRay.build/Objects-normal/x86_64/Trace.o

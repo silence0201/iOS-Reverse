@@ -1,0 +1,61 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+
+config_map = {}
+
+def map_config(source_dir, site_config):
+    global config_map
+    source_dir = os.path.realpath(source_dir)
+    source_dir = os.path.normcase(source_dir)
+    site_config = os.path.normpath(site_config)
+    config_map[source_dir] = site_config
+
+# Variables configured at build time.
+llvm_source_root = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source"
+llvm_obj_root = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode"
+
+# Make sure we can find the lit package.
+sys.path.insert(0, os.path.join(llvm_source_root, 'utils', 'lit'))
+
+# Set up some builtin parameters, so that by default the LLVM test suite
+# configuration file knows how to find the object tree.
+builtin_parameters = { 'build_mode' : "RelWithDebInfo" }
+
+
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/libcxxabi/test/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxxabi/test/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/libcxx/test/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/test/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/builtins/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/builtins/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/cfi/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/cfi/Standalone-x86_64/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/cfi/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/cfi/Devirt-x86_64/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/cfi/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/cfi/Standalone-x86_64h/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/cfi/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/cfi/Devirt-x86_64h/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/fuzzer/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/fuzzer/X86_64DefaultDarwinConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/fuzzer/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/fuzzer/X86_64HDefaultDarwinConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/asan/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/asan/X86_64DarwinConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/asan/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/asan/X86_64HDarwinConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/tsan/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/tsan/X86_64Config/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/tsan/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/tsan/X86_64HConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/tsan/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/tsan/IOSSimX86_64Config/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/tsan/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/tsan/IOSARM64Config/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/safestack/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/safestack/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/profile/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/profile/Profile-x86_64/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/profile/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/profile/Profile-x86_64h/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/xray/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/xray/X86_64DarwinConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/xray/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/xray/X86_64HDarwinConfig/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/shadowcallstack/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/shadowcallstack/x86_64/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/projects/compiler-rt/test/shadowcallstack/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/compiler-rt/test/shadowcallstack/x86_64h/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/tools/clang/test/lit.cfg.py', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/tools/clang/test/lit.site.cfg.py')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/tools/clang/test/Unit/lit.cfg.py', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/tools/clang/test/Unit/lit.site.cfg.py')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/tools/clang/utils/perf-training/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/tools/clang/utils/perf-training/order-files/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/lit/tests/lit.cfg', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/lit/lit.site.cfg')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/test/lit.cfg.py', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/test/lit.site.cfg.py')
+map_config('/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/test/Unit/lit.cfg.py', '/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/test/Unit/lit.site.cfg.py')
+
+builtin_parameters['config_map'] = config_map
+
+if __name__=='__main__':
+    from lit.main import main
+    main(builtin_parameters)

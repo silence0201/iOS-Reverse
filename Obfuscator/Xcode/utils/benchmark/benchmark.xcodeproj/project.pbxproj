@@ -1,0 +1,1321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3FE578C64D6C4D029FE302DB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9B64B04E15B440EE9E8D5154 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				AE99E6AEE0D04811861E5391 /* CMake Rules */,
+			);
+			dependencies = (
+				C3A14FE69808414680B61EB7 /* PBXTargetDependency */,
+				17465100131E4C969198B56D /* PBXTargetDependency */,
+				42928458167B4F48BEFF1700 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		43843DFCAAC3494DBCBF5630 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C6E14AEA4468437896B90B28 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				20611747C2334579A48F2F23 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		49D020BF393F4DFA8BBBE589 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 668EC1E9B5514F3EB81E4A77 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				DC80D67BEFF248189AA2B8EE /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				615BFF05662F48D0A9F0359A /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		62734786A5CC43A494307B67 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D78649D21B04D0F92F5DB5F /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				55622AC1AE38478BAA89C27C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				229E970431734852BCCD2A13 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		074C7C644FD14CC29DA1E2C1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.cc */ = {isa = PBXBuildFile; fileRef = 210E795C33634927BB4002A6 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.cc */; };
+		08E4DD3C2A0941A2B922AD49 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_api_internal.h */ = {isa = PBXBuildFile; fileRef = 2E3C88DE26F1425AB7258A89 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_api_internal.h */; };
+		0E43F266F2F04E8AAD3A5DF9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.cc */ = {isa = PBXBuildFile; fileRef = D1CDDAE89FC74A069FBBA1DF /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.cc */; };
+		10D5C7477D324FD392004371 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/internal_macros.h */ = {isa = PBXBuildFile; fileRef = DE89365F0A69400789E94281 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/internal_macros.h */; };
+		190EE844A8824EA5966D5943 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.h */ = {isa = PBXBuildFile; fileRef = 529739A58DF1433A8EF2D572 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.h */; };
+		35AD435168A549038D153FF8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/mutex.h */ = {isa = PBXBuildFile; fileRef = C91D68CC8AF940239079BFC8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/mutex.h */; };
+		367C25D71EDE4C3B85753EC9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.cc */ = {isa = PBXBuildFile; fileRef = 6E5B25AD43084ABC9D955981 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.cc */; };
+		3AB2D29A50CA45A59AD037B1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_manager.h */ = {isa = PBXBuildFile; fileRef = 38FC7A7059D64219B78FB82A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_manager.h */; };
+		3ACD0EF32CB44D25AE17A20F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.cc */ = {isa = PBXBuildFile; fileRef = 41B0ECE663DE46F089CFF96E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.cc */; };
+		431AE5C0B7F0422B9A4C3EBE /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.cc */ = {isa = PBXBuildFile; fileRef = 4C0F0C4E30DD424AAE706AAA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.cc */; };
+		4BE9AE8ED42147AA9CDEEF51 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/console_reporter.cc */ = {isa = PBXBuildFile; fileRef = A36130A8468C405CB78E0D24 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/console_reporter.cc */; };
+		51568F9E66894AE8A647CA23 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/reporter.cc */ = {isa = PBXBuildFile; fileRef = E99F371B11C64075A2DE26A4 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/reporter.cc */; };
+		545C0AB327624A94B6EAF11B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.cc */ = {isa = PBXBuildFile; fileRef = 688A879D0D464FF59828DB44 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.cc */; };
+		55002E1251944BAF9BE9C6AB /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/csv_reporter.cc */ = {isa = PBXBuildFile; fileRef = 8B915CE528C44C41A376219F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/csv_reporter.cc */; };
+		59BC31FD46E344C8B0AD61CE /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/arraysize.h */ = {isa = PBXBuildFile; fileRef = 0664C87D9A874C179CDFA06E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/arraysize.h */; };
+		61D3F408021D40A0A1679D01 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/check.h */ = {isa = PBXBuildFile; fileRef = 0484A7D8A8474B3D86B536C1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/check.h */; };
+		75B70EB0D1CA4C908BC062B4 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_timer.h */ = {isa = PBXBuildFile; fileRef = 3E6D6AEDAD7C4CFFA9F8343C /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_timer.h */; };
+		8B43EE2FC9D24153B32A5B21 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/log.h */ = {isa = PBXBuildFile; fileRef = C6A8B825A9D347E2B9AA5DF3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/log.h */; };
+		95F824A34DEB4048B89730EA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.h */ = {isa = PBXBuildFile; fileRef = 7ACE9D976361422CBA079726 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.h */; };
+		9B620D657FB44AFDA08F528F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.h */ = {isa = PBXBuildFile; fileRef = B0F55FEA5ACA4270B7E54A05 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.h */; };
+		9C1E25E44B204D829829C244 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/re.h */ = {isa = PBXBuildFile; fileRef = 290927012A044EB29C115AB6 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/re.h */; };
+		A5E0483CA4014EC6B435E9D3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include/benchmark/benchmark.h */ = {isa = PBXBuildFile; fileRef = FFC8EBF335244137A1A5615B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include/benchmark/benchmark.h */; };
+		A784B6517FE14FFE996762BE /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark.cc */ = {isa = PBXBuildFile; fileRef = BA15927A698048CD8298DFFD /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark.cc */; };
+		A79FA365A9FE4E9F9222FA6E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/json_reporter.cc */ = {isa = PBXBuildFile; fileRef = 0C37BE7824C1493A8F2EDA1A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/json_reporter.cc */; };
+		C454BE2E055B45B6A21155CB /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.cc */ = {isa = PBXBuildFile; fileRef = 63B74E09F6C64D5EB044D171 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.cc */; };
+		C5879D5656C64259BFF21369 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.h */ = {isa = PBXBuildFile; fileRef = 2465931449D24BBC807C414F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.h */; };
+		C6B28D1933EB4971A73DE1A7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.cc */ = {isa = PBXBuildFile; fileRef = 301351A8EBD346629D4BA4CC /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.cc */; };
+		CA1BA6214E924DB9802828A2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/cycleclock.h */ = {isa = PBXBuildFile; fileRef = D3831A8939A543F2A94B4A67 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/cycleclock.h */; };
+		D2288B6F9D304831A5ADC76C /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.cc */ = {isa = PBXBuildFile; fileRef = C7856E0302C94031B4F54143 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.cc */; };
+		D3882606538C45F1A90C60D1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.h */ = {isa = PBXBuildFile; fileRef = 7E236869729A4A85AC721714 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.h */; };
+		D5245966C66C4557B925368A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_main.cc */ = {isa = PBXBuildFile; fileRef = 5A33FCD6EF0945348FDE211A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_main.cc */; };
+		D8F06580635B472F9AC51F7D /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sysinfo.cc */ = {isa = PBXBuildFile; fileRef = D89A53E58587422C9DA13A2A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sysinfo.cc */; };
+		DA5948A52EFC425C936B7D60 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.h */ = {isa = PBXBuildFile; fileRef = A782886DB83E4079968FB6C0 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.h */; };
+		DCB756F5969740E79FA1CE09 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.h */ = {isa = PBXBuildFile; fileRef = 6D204F82688746C59457F94E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.h */; };
+		E3A8C1250AEF42B2BF97A2A8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DE7BF6A3B4AF44D28E7D48E2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */; };
+		F41EBE22E5CC437DBA277FE2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.h */ = {isa = PBXBuildFile; fileRef = 0AC79E16D12042B391E3171B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.h */; };
+		FBA31118FD234ABC923D6AD2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.h */ = {isa = PBXBuildFile; fileRef = B55107D974904B32942F9675 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.h */; };
+		FEE471EABB3141A0AFD11C6E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 92A2ECC0EB554AA588F96FDA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		28752BDF46624952A24095AC /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		303949A195AD4FB198CBE7F7 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		3D3855E759014BA68EA10E55 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		914DFFD437724940BBB0BF01 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		5C77C437ED4D460FA4CE1E52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43843DFCAAC3494DBCBF5630;
+			remoteInfo = ZERO_CHECK;
+		};
+		68EF031DACFC481A9EF07841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43843DFCAAC3494DBCBF5630;
+			remoteInfo = ZERO_CHECK;
+		};
+		8F3EB5B368CA456F86E6B65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE578C64D6C4D029FE302DB;
+			remoteInfo = ALL_BUILD;
+		};
+		B9EFAEA65181457FA572DF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43843DFCAAC3494DBCBF5630;
+			remoteInfo = ZERO_CHECK;
+		};
+		BC08681508BA4011ADC592F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FE578C64D6C4D029FE302DB;
+			remoteInfo = ALL_BUILD;
+		};
+		C56D529AA687422BB3378C44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01566B0523A41A195BB8296;
+			remoteInfo = benchmark_main;
+		};
+		CFF620E6ADF146228B9FEBB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52597B7FD64419FACED2F14;
+			remoteInfo = benchmark;
+		};
+		FFB307464792430095E89052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 617E861C1991441BA8DD4ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52597B7FD64419FACED2F14;
+			remoteInfo = benchmark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0484A7D8A8474B3D86B536C1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/check.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = check.h; path = src/check.h; sourceTree = SOURCE_ROOT; };
+		0664C87D9A874C179CDFA06E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/arraysize.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = arraysize.h; path = src/arraysize.h; sourceTree = SOURCE_ROOT; };
+		0AC79E16D12042B391E3171B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = commandlineflags.h; path = src/commandlineflags.h; sourceTree = SOURCE_ROOT; };
+		0C37BE7824C1493A8F2EDA1A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/json_reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json_reporter.cc; path = src/json_reporter.cc; sourceTree = SOURCE_ROOT; };
+		210E795C33634927BB4002A6 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = colorprint.cc; path = src/colorprint.cc; sourceTree = SOURCE_ROOT; };
+		2465931449D24BBC807C414F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = counter.h; path = src/counter.h; sourceTree = SOURCE_ROOT; };
+		251C99C3B1144D2F9E388E92 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		290927012A044EB29C115AB6 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/re.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = re.h; path = src/re.h; sourceTree = SOURCE_ROOT; };
+		2E3C88DE26F1425AB7258A89 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_api_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = benchmark_api_internal.h; path = src/benchmark_api_internal.h; sourceTree = SOURCE_ROOT; };
+		301351A8EBD346629D4BA4CC /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = commandlineflags.cc; path = src/commandlineflags.cc; sourceTree = SOURCE_ROOT; };
+		38FC7A7059D64219B78FB82A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_manager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = thread_manager.h; path = src/thread_manager.h; sourceTree = SOURCE_ROOT; };
+		3E6D6AEDAD7C4CFFA9F8343C /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = thread_timer.h; path = src/thread_timer.h; sourceTree = SOURCE_ROOT; };
+		41B0ECE663DE46F089CFF96E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = counter.cc; path = src/counter.cc; sourceTree = SOURCE_ROOT; };
+		4C0F0C4E30DD424AAE706AAA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timers.cc; path = src/timers.cc; sourceTree = SOURCE_ROOT; };
+		529739A58DF1433A8EF2D572 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = complexity.h; path = src/complexity.h; sourceTree = SOURCE_ROOT; };
+		5A33FCD6EF0945348FDE211A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = benchmark_main.cc; path = src/benchmark_main.cc; sourceTree = SOURCE_ROOT; };
+		63B74E09F6C64D5EB044D171 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sleep.cc; path = src/sleep.cc; sourceTree = SOURCE_ROOT; };
+		688A879D0D464FF59828DB44 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = benchmark_register.cc; path = src/benchmark_register.cc; sourceTree = SOURCE_ROOT; };
+		6D204F82688746C59457F94E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = statistics.h; path = src/statistics.h; sourceTree = SOURCE_ROOT; };
+		6E5B25AD43084ABC9D955981 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = string_util.cc; path = src/string_util.cc; sourceTree = SOURCE_ROOT; };
+		7ACE9D976361422CBA079726 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sleep.h; path = src/sleep.h; sourceTree = SOURCE_ROOT; };
+		7E236869729A4A85AC721714 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = benchmark_register.h; path = src/benchmark_register.h; sourceTree = SOURCE_ROOT; };
+		8B915CE528C44C41A376219F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/csv_reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = csv_reporter.cc; path = src/csv_reporter.cc; sourceTree = SOURCE_ROOT; };
+		92A2ECC0EB554AA588F96FDA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A36130A8468C405CB78E0D24 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/console_reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console_reporter.cc; path = src/console_reporter.cc; sourceTree = SOURCE_ROOT; };
+		A782886DB83E4079968FB6C0 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = timers.h; path = src/timers.h; sourceTree = SOURCE_ROOT; };
+		B0F55FEA5ACA4270B7E54A05 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = colorprint.h; path = src/colorprint.h; sourceTree = SOURCE_ROOT; };
+		B55107D974904B32942F9675 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = string_util.h; path = src/string_util.h; sourceTree = SOURCE_ROOT; };
+		BA15927A698048CD8298DFFD /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = benchmark.cc; path = src/benchmark.cc; sourceTree = SOURCE_ROOT; };
+		C6A8B825A9D347E2B9AA5DF3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/log.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = log.h; path = src/log.h; sourceTree = SOURCE_ROOT; };
+		C7856E0302C94031B4F54143 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = complexity.cc; path = src/complexity.cc; sourceTree = SOURCE_ROOT; };
+		C91D68CC8AF940239079BFC8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/mutex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutex.h; path = src/mutex.h; sourceTree = SOURCE_ROOT; };
+		D1CDDAE89FC74A069FBBA1DF /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = statistics.cc; path = src/statistics.cc; sourceTree = SOURCE_ROOT; };
+		D3831A8939A543F2A94B4A67 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/cycleclock.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cycleclock.h; path = src/cycleclock.h; sourceTree = SOURCE_ROOT; };
+		D89A53E58587422C9DA13A2A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sysinfo.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sysinfo.cc; path = src/sysinfo.cc; sourceTree = SOURCE_ROOT; };
+		DE7BF6A3B4AF44D28E7D48E2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DE89365F0A69400789E94281 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/internal_macros.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal_macros.h; path = src/internal_macros.h; sourceTree = SOURCE_ROOT; };
+		E99F371B11C64075A2DE26A4 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/reporter.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reporter.cc; path = src/reporter.cc; sourceTree = SOURCE_ROOT; };
+		EAFC53B36F9E4A93B8E9339C /* benchmark_main */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbenchmark_main.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F194AEAF2FB34DD79BE353E0 /* benchmark */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libbenchmark.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC8EBF335244137A1A5615B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include/benchmark/benchmark.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = benchmark.h; path = include/benchmark/benchmark.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CA85D78FA984FF4873BC8EE /* benchmark */ = {
+			isa = PBXGroup;
+			children = (
+				D7C6BCF8925843FA95B519EC /* Header Files */,
+				59E67D17E4A34D8982B2176D /* Source Files */,
+				92A2ECC0EB554AA588F96FDA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */,
+			);
+			name = benchmark;
+			sourceTree = "<group>";
+		};
+		2305823102F04C148EF84BF8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F2C2BDD57CD24E358CF24069 /* benchmark_main */,
+				0CA85D78FA984FF4873BC8EE /* benchmark */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		2B47EA72C4E844079CE7C426 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A33FCD6EF0945348FDE211A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		59E67D17E4A34D8982B2176D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA15927A698048CD8298DFFD /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark.cc */,
+				688A879D0D464FF59828DB44 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.cc */,
+				210E795C33634927BB4002A6 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.cc */,
+				301351A8EBD346629D4BA4CC /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.cc */,
+				C7856E0302C94031B4F54143 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.cc */,
+				A36130A8468C405CB78E0D24 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/console_reporter.cc */,
+				41B0ECE663DE46F089CFF96E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.cc */,
+				8B915CE528C44C41A376219F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/csv_reporter.cc */,
+				0C37BE7824C1493A8F2EDA1A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/json_reporter.cc */,
+				E99F371B11C64075A2DE26A4 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/reporter.cc */,
+				63B74E09F6C64D5EB044D171 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.cc */,
+				D1CDDAE89FC74A069FBBA1DF /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.cc */,
+				6E5B25AD43084ABC9D955981 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.cc */,
+				D89A53E58587422C9DA13A2A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sysinfo.cc */,
+				4C0F0C4E30DD424AAE706AAA /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6230A576A9F74971B5BA9C44 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B1779DFEE26E4A81AA011CDD /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				6230A576A9F74971B5BA9C44 /* CMake Rules */,
+				251C99C3B1144D2F9E388E92 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BF639EE5D9FB4BC79458F537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F194AEAF2FB34DD79BE353E0 /* benchmark */,
+				EAFC53B36F9E4A93B8E9339C /* benchmark_main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7C6BCF8925843FA95B519EC /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFC8EBF335244137A1A5615B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include/benchmark/benchmark.h */,
+				0664C87D9A874C179CDFA06E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/arraysize.h */,
+				2E3C88DE26F1425AB7258A89 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_api_internal.h */,
+				7E236869729A4A85AC721714 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.h */,
+				0484A7D8A8474B3D86B536C1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/check.h */,
+				B0F55FEA5ACA4270B7E54A05 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.h */,
+				0AC79E16D12042B391E3171B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.h */,
+				529739A58DF1433A8EF2D572 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.h */,
+				2465931449D24BBC807C414F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.h */,
+				D3831A8939A543F2A94B4A67 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/cycleclock.h */,
+				DE89365F0A69400789E94281 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/internal_macros.h */,
+				C6A8B825A9D347E2B9AA5DF3 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/log.h */,
+				C91D68CC8AF940239079BFC8 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/mutex.h */,
+				290927012A044EB29C115AB6 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/re.h */,
+				7ACE9D976361422CBA079726 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.h */,
+				6D204F82688746C59457F94E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.h */,
+				B55107D974904B32942F9675 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.h */,
+				38FC7A7059D64219B78FB82A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_manager.h */,
+				3E6D6AEDAD7C4CFFA9F8343C /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/thread_timer.h */,
+				A782886DB83E4079968FB6C0 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		EC35540A28F54D09ADA00EE4 = {
+			isa = PBXGroup;
+			children = (
+				B1779DFEE26E4A81AA011CDD /* ALL_BUILD */,
+				2305823102F04C148EF84BF8 /* Utils */,
+				BF639EE5D9FB4BC79458F537 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2C2BDD57CD24E358CF24069 /* benchmark_main */ = {
+			isa = PBXGroup;
+			children = (
+				2B47EA72C4E844079CE7C426 /* Source Files */,
+				DE7BF6A3B4AF44D28E7D48E2 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/CMakeLists.txt */,
+			);
+			name = benchmark_main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B01566B0523A41A195BB8296 /* benchmark_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BEAADFA9FE4D15BEFDB74E /* Build configuration list for PBXNativeTarget "benchmark_main" */;
+			buildPhases = (
+				442292CE4CBD42F9BA33F124 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94F14BA6AAB548B28C713098 /* PBXTargetDependency */,
+				EC8CCE76AB2543458754D58B /* PBXTargetDependency */,
+			);
+			name = benchmark_main;
+			productName = benchmark_main;
+			productReference = EAFC53B36F9E4A93B8E9339C /* benchmark_main */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F52597B7FD64419FACED2F14 /* benchmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B46A10FD4F43FFA9CCF167 /* Build configuration list for PBXNativeTarget "benchmark" */;
+			buildPhases = (
+				C77CC419881347568E66E9AC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0B61EC48C75481BB5773F40 /* PBXTargetDependency */,
+			);
+			name = benchmark;
+			productName = benchmark;
+			productReference = F194AEAF2FB34DD79BE353E0 /* benchmark */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		617E861C1991441BA8DD4ADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 6750ADC37A404236BB2F1A6C /* Build configuration list for PBXProject "benchmark" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				303949A195AD4FB198CBE7F7 /* Debug */,
+				914DFFD437724940BBB0BF01 /* Release */,
+				3D3855E759014BA68EA10E55 /* MinSizeRel */,
+				28752BDF46624952A24095AC /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = EC35540A28F54D09ADA00EE4;
+			projectDirPath = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark";
+			projectRoot = "";
+			targets = (
+				3FE578C64D6C4D029FE302DB /* ALL_BUILD */,
+				43843DFCAAC3494DBCBF5630 /* ZERO_CHECK */,
+				F52597B7FD64419FACED2F14 /* benchmark */,
+				B01566B0523A41A195BB8296 /* benchmark_main */,
+				62734786A5CC43A494307B67 /* install */,
+				49D020BF393F4DFA8BBBE589 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20611747C2334579A48F2F23 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		55622AC1AE38478BAA89C27C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		6E54F14801B746C9ABB9C4B9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A2E1BDA0AD5F45C4A2C55716 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		ADC05E344DE94F5E96A92DA1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		AE99E6AEE0D04811861E5391 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		D918ACDE99F141B18B354610 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		DC80D67BEFF248189AA2B8EE /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark -f /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/CMakeScripts/package_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442292CE4CBD42F9BA33F124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5245966C66C4557B925368A /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C77CC419881347568E66E9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A784B6517FE14FFE996762BE /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark.cc */,
+				545C0AB327624A94B6EAF11B /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/benchmark_register.cc */,
+				074C7C644FD14CC29DA1E2C1 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/colorprint.cc */,
+				C6B28D1933EB4971A73DE1A7 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/commandlineflags.cc */,
+				D2288B6F9D304831A5ADC76C /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/complexity.cc */,
+				4BE9AE8ED42147AA9CDEEF51 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/console_reporter.cc */,
+				3ACD0EF32CB44D25AE17A20F /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/counter.cc */,
+				55002E1251944BAF9BE9C6AB /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/csv_reporter.cc */,
+				A79FA365A9FE4E9F9222FA6E /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/json_reporter.cc */,
+				51568F9E66894AE8A647CA23 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/reporter.cc */,
+				C454BE2E055B45B6A21155CB /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sleep.cc */,
+				0E43F266F2F04E8AAD3A5DF9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/statistics.cc */,
+				367C25D71EDE4C3B85753EC9 /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/string_util.cc */,
+				D8F06580635B472F9AC51F7D /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/sysinfo.cc */,
+				431AE5C0B7F0422B9A4C3EBE /* /Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/timers.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17465100131E4C969198B56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B01566B0523A41A195BB8296 /* benchmark_main */;
+			targetProxy = C56D529AA687422BB3378C44 /* PBXContainerItemProxy */;
+		};
+		229E970431734852BCCD2A13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE578C64D6C4D029FE302DB /* ALL_BUILD */;
+			targetProxy = BC08681508BA4011ADC592F9 /* PBXContainerItemProxy */;
+		};
+		42928458167B4F48BEFF1700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52597B7FD64419FACED2F14 /* benchmark */;
+			targetProxy = CFF620E6ADF146228B9FEBB5 /* PBXContainerItemProxy */;
+		};
+		615BFF05662F48D0A9F0359A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FE578C64D6C4D029FE302DB /* ALL_BUILD */;
+			targetProxy = 8F3EB5B368CA456F86E6B65C /* PBXContainerItemProxy */;
+		};
+		94F14BA6AAB548B28C713098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43843DFCAAC3494DBCBF5630 /* ZERO_CHECK */;
+			targetProxy = B9EFAEA65181457FA572DF63 /* PBXContainerItemProxy */;
+		};
+		C0B61EC48C75481BB5773F40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43843DFCAAC3494DBCBF5630 /* ZERO_CHECK */;
+			targetProxy = 68EF031DACFC481A9EF07841 /* PBXContainerItemProxy */;
+		};
+		C3A14FE69808414680B61EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43843DFCAAC3494DBCBF5630 /* ZERO_CHECK */;
+			targetProxy = 5C77C437ED4D460FA4CE1E52 /* PBXContainerItemProxy */;
+		};
+		EC8CCE76AB2543458754D58B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52597B7FD64419FACED2F14 /* benchmark */;
+			targetProxy = FFB307464792430095E89052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FEC06FBA7EC448686942B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		196F4E77461248C48A40A2F0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		33BEC2D8CC044992A863733D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		462542C2983F4357A49F1E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/build";
+			};
+			name = Release;
+		};
+		56AAD75225D44586A5CAB258 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5C6BB0A31ECF45099BE8C6EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5D9DDB4FC17845DA9B4F4BDC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6147631C7D6149BFAC36FA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/build";
+			};
+			name = Debug;
+		};
+		67D04FD376A5483CB02CD835 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/build";
+			};
+			name = RelWithDebInfo;
+		};
+		6946DF88BF2D49D8BB9B7512 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/build";
+			};
+			name = MinSizeRel;
+		};
+		77CB49E28D384F868B44CF2D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7B77B20636FF40229A0B98E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		81E0AC4612034622ACD3E272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		831C17E2B2154228AD1176A4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		94A2088132804D17917E2C4B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9FF8F9DBD98A467586222E5B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BF70DFA2D3E24717B6527357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CD2D3E200191481AB257348E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CFDD9F02362843BBA18E7FEF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DB7BAC48F3D44693A6F62A1C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DD10704FD3924A5F8D1EBEE9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety        -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DEC243F69FDA4E82931F6AE2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E00A5C5BE12247CF8819F702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E032E13D99B4481097F3FE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark_main;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E6E9516C8FBA4ED79D1D5361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F6A19FECE44543FBAB7B60F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F73750C54778473D9CBE7F2D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FC545334A7FA4BB58C52BC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",__STDC_CONSTANT_MACROS,__STDC_FORMAT_MACROS,__STDC_LIMIT_MACROS,HAVE_STD_REGEX,HAVE_POSIX_REGEX,HAVE_STEADY_CLOCK);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src",/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/libxml2,"/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/include","/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Source/utils/benchmark/src/../include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Wthread-safety     -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = benchmark;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/utils/benchmark/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03B46A10FD4F43FFA9CCF167 /* Build configuration list for PBXNativeTarget "benchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00A5C5BE12247CF8819F702 /* Debug */,
+				FC545334A7FA4BB58C52BC5D /* Release */,
+				196F4E77461248C48A40A2F0 /* MinSizeRel */,
+				77CB49E28D384F868B44CF2D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		18BEAADFA9FE4D15BEFDB74E /* Build configuration list for PBXNativeTarget "benchmark_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E032E13D99B4481097F3FE24 /* Debug */,
+				0FEC06FBA7EC448686942B20 /* Release */,
+				CFDD9F02362843BBA18E7FEF /* MinSizeRel */,
+				DD10704FD3924A5F8D1EBEE9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4D78649D21B04D0F92F5DB5F /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF70DFA2D3E24717B6527357 /* Debug */,
+				81E0AC4612034622ACD3E272 /* Release */,
+				9FF8F9DBD98A467586222E5B /* MinSizeRel */,
+				56AAD75225D44586A5CAB258 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		668EC1E9B5514F3EB81E4A77 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B77B20636FF40229A0B98E5 /* Debug */,
+				F6A19FECE44543FBAB7B60F0 /* Release */,
+				DB7BAC48F3D44693A6F62A1C /* MinSizeRel */,
+				831C17E2B2154228AD1176A4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6750ADC37A404236BB2F1A6C /* Build configuration list for PBXProject "benchmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6147631C7D6149BFAC36FA14 /* Debug */,
+				462542C2983F4357A49F1E3C /* Release */,
+				6946DF88BF2D49D8BB9B7512 /* MinSizeRel */,
+				67D04FD376A5483CB02CD835 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B64B04E15B440EE9E8D5154 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6BB0A31ECF45099BE8C6EB /* Debug */,
+				E6E9516C8FBA4ED79D1D5361 /* Release */,
+				F73750C54778473D9CBE7F2D /* MinSizeRel */,
+				94A2088132804D17917E2C4B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6E14AEA4468437896B90B28 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2D3E200191481AB257348E /* Debug */,
+				33BEC2D8CC044992A863733D /* Release */,
+				DEC243F69FDA4E82931F6AE2 /* MinSizeRel */,
+				5D9DDB4FC17845DA9B4F4BDC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 617E861C1991441BA8DD4ADB /* Project object */;
+}

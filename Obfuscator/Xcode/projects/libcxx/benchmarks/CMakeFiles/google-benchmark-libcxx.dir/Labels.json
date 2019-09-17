@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/CMakeFiles/google-benchmark-libcxx"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/CMakeFiles/google-benchmark-libcxx.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/CMakeFiles/CMakeFiles/google-benchmark-libcxx-complete.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-install.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-mkdir.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-download.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-update.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-patch.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-configure.rule"
+		},
+		{
+			"file" : "/Users/silence/Documents/Github/Me/iOS-Reverse/Obfuscator/Xcode/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/CMakeFiles/google-benchmark-libcxx-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"google-benchmark-libcxx"
+		],
+		"name" : "google-benchmark-libcxx"
+	}
+}
