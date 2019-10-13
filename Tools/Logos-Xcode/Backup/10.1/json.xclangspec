@@ -1,0 +1,69 @@
+/****************************************************************************/
+// MARK: JSON files
+/****************************************************************************/
+(
+    {
+        Identifier = "xcode.lang.json";
+        Description = "JSON";
+        IncludeInMenu = YES;
+        Name = "JSON";
+        Syntax = {
+            Tokenizer = "xcode.lang.json.lexer";
+            IncludeRules = (
+                "xcode.lang.json.array",
+                "xcode.lang.json.dict",
+            );
+            Type = "xcode.syntax.plain";
+        };
+    },
+    {
+        Identifier = "xcode.lang.json.lexer";
+        Syntax = {
+            IncludeRules = (
+                "xcode.lang.string",
+                "xcode.lang.number",
+                "xcode.lang.json.identifier",
+            );
+        };
+    },
+    {
+        Identifier = "xcode.lang.json.identifier";
+        Syntax = {
+            StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+            Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+            Words = (
+                "false",
+                "null",
+                "true",
+            );
+            Type = "xcode.syntax.keyword";
+            AltType = "xcode.syntax.identifier";
+        };
+    },
+    {
+        Identifier = "xcode.lang.json.dict";
+        Syntax = {
+            Tokenizer = "xcode.lang.json.lexer";
+            Start = "{";
+            End = "}";
+            Foldable = YES;
+            Recursive = YES;
+            IncludeRules = (
+                "xcode.lang.json.array",
+            );
+        };
+    },
+    {
+        Identifier = "xcode.lang.json.array";
+        Syntax = {
+            Tokenizer = "xcode.lang.json.lexer";
+            Start = "[";
+            End = "]";
+            Foldable = YES;
+            Recursive = YES;
+            IncludeRules = (
+                "xcode.lang.json.dict",
+            );
+        };
+    },
+)
